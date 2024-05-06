@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+/* -------------------------------SECCION TOPBAR--------------------------------  */
+.header{
+    background-color: #14262e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    padding: 1px 6%;
+    z-index: 3;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .topMenu{
+    list-style: none;
+}
+
+.header .topMenu li{
+    display: inline-block;
+    padding: 40px 94px;    
+}
+
+.header .topMenu li:hover{
+    transform: scale(1.1);
+}
+
+.header .topMenu a{
+    font-size: 20px;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.header .topMenu li a:hover{
+    color: #ffbc0e;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 12px 32px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    background-color: #42778e;
+    min-width: 200px;
+    margin-top: 12%;
+    z-index: 3; /* Z-index más alto para que esté por encima del carrusel */
+}
+
+.header .topMenu li:hover .subMenu {
+    display: block;
+}
+
+.header .topMenu .subMenu li {
+    display: block;
+    padding: 10px;
+}
+
+
+.header .topMenu .subMenu li a {
+    color: #eceff1;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.header .topMenu .subMenu li a:hover {
+    color: #ffbc0e;
+}
+
+.header .topMenu .subMenu li:hover{
+    background-color: #4e8ca7;
+}
+
+/* -------------------------------SECCION TOPBAR--------------------------------  */
+
+
+
+
+
+
+
+/* -------------------------------SECCION CARRUSEL--------------------------------  */
+.container-carousel {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background-color: #000000;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2; /* Asegura que el texto esté encima de la capa oscura */
+    opacity: 1; /* Texto inicialmente invisible */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad para el texto */
+}
+.slider-section:hover .carousel-caption {
+    opacity: 1; /* Mostrar texto al pasar el mouse por encima */
+    
+}
+.slider-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.5); /* Cambia el valor de "0.5" para ajustar la opacidad */
+    z-index: 2;
+    pointer-events: none; /* Evita que la capa afecte la interacción con el contenido */
+    transition: opacity 0.3s ease; /* Transición suave para el efecto de tono oscuro */
+    opacity: 1; /* La capa es inicialmente transparente */
+}
+
+.slider-section:hover::before {
+    opacity: 1; /* La capa se vuelve visible al pasar el mouse por encima */
+}
+
+
+.carousel-caption h2 {
+    font-size: 2em;
+}
+
+.carousel-caption p {
+    font-size: 1.2em;
+}
+
+.carruseles {
+    width: 500%;
+    height: 100%;
+    display: flex;
+
+}
+
+.slider-section {
+    width: calc(100% / 5);
+    height: 100%;
+    position: relative;
+}
+
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 3.0rem;
+    background-color: rgba(32, 32, 32, 0.514);
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #c7c7c7de;
+    transform: translate(0,-50%);
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+/* -------------------------------SECCION CARRUSEL--------------------------------  */
+
+/* -------------------------------SECCION ABOUT--------------------------------  */
+#about{
+    height: 400px;
+    position: relative;
+    background-color: #0a1114;
+    padding: 85px 0px 125px 0px;
+}
+.columna{
+    max-width: 1140px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 50%;
+}
+#cajaIzquierda{
+    width: 50%;
+}
+.elementoIzquierda{
+    margin: 0px 0px 0px 0px;
+    padding: 18px 30px 18px 0px;
+    border-style: solid;
+    border-width: 0px 2px 0px 0px;
+    border-color: #1398d6;
+    text-align: right;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.elementoIzquierda h2{
+    color: #ffffff;
+    font-family: "Tauri", Sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: oblique;
+    line-height: 1.5em;
+    letter-spacing: 1.8px;
+    font-size: 26px;
+    padding-right: 20px;
+}
+
+
+#cajaDerecha{
+    align-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.elementoDerecha{
+    color: #ffffff;
+    font-family: "Lato", Sans-serif;
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+.elementoDerecha p{
+    font-size: 20px;
+}
+
+.elementoDerecha a{
+    text-decoration: none;
+    color: #555;
+}
+
+.elementoDerecha a:hover{
+    color:#ffbc0e;
+}
+
+/* -------------------------------SECCION ABOUT--------------------------------  */
+
+/* -------------------------------SECCION SERVICIOS--------------------------------  */
+#servicios1{
+    height: 600px;
+    position: relative;
+    background-color: #ffffff;   
+}
+#servicios1 .imgServicio{
+    z-index: 2;
+    padding-right: 6%;
+    margin: -81px 0px 0px -162px ;
+}
+#servicios1 .infoServicio{
+    margin-right: -177px;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+
+
+#servicios2{
+    height: 600px;
+    position: relative;
+    background-color: #000000;   
+
+}
+#servicios2 .infoServicio{
+    color: white;
+    margin-right: 114px;
+    text-align: left;
+    height: 600px;
+
+}
+
+#servicios2 .infoServicio h2{
+    color: white;
+}
+#servicios2 .infoServicio p{
+    padding-bottom: 5%;
+}
+#servicios2 .imgServicio{
+    z-index: 2;
+    padding-right: 6%;
+    width: 324px;
+    margin-top: -145px;
+}
+#servicios2 .imgServicio img{
+    width: 800px;
+    
+}
+#servicios2 .btn-servicios button{
+    float: right;
+}
+
+#servicios2{
+    z-index: 2;
+}
+
+
+#servicios3{
+    height: 600px;
+    position: relative;
+    background-color: #ffffff;   
+    z-index: 2;
+}
+#servicios3 .infoServicio{
+    margin-right: -193px;
+    text-align: left;
+    margin-top: 80px;
+}
+#servicios3 .imgServicio img{
+    width: 826px;
+    margin-left: -202px;
+    margin-top: -58px;
+}
+#servicios3 .btn-servicios button{
+    float: right;
+}
+
+
+#servicios4{
+    height: 600px;
+    position: relative;
+    background-color: #000000;   
+    z-index: 2;
+}
+#servicios4 .infoServicio{
+    color: white;
+    text-align: left;
+    margin-right: 53px;
+    margin-top: 80px;
+  
+}
+#servicios4 .infoServicio h2{
+    color: white;
+}
+#servicios4 .infoServicio p{
+    margin-bottom: 20px;
+}
+#servicios4 .imgServicio{
+    z-index: 2;
+    padding-right: 6%;
+    width: 324px;
+    margin-top: -145px;
+}
+#servicios4 .imgServicio{
+    z-index: 2;
+    padding-right: 6%;
+    width: 347px;
+    margin-top: -75px;
+    margin-left: 38px;
+}
+#servicios4 .imgServicio img{
+    width: 823px;
+}
+
+.infoServicio{
+    margin: 0px 0px 0px 0px;
+    padding: 18px 30px 18px 0px;
+    text-align: right;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    display: inline-block;
+}
+.imgServicio{
+    display: inline-block;
+}
+.infoServicio h2{
+    color: #303030;
+    font-family: "Tauri", Sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: oblique;
+    letter-spacing: 1px;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #1398d6;
+    padding-bottom: 2%;
+    font-size: 27px;
+}
+
+.infoServicio p{
+    font-family: "Lato", Sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.7em;
+    padding-top: 9%;
+}
+.btn-servicios button{
+    float: right;
+    font-size: 18px;
+    padding: 9px;
+    width: 129px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: #ffbc0e;
+    border: solid;
+    border-width:2px;
+    border-color: #ffbb0eca;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.btn-servicios button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+/* -------------------------------SECCION SERVICIOS--------------------------------  */
+
+
+/* -------------------------------SECCION PRODUCTOS--------------------------------  */
+#productos{
+    height: 800px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+}
+
+#productos .columna{
+    width: 100%;
+}
+.EquipoTactico{
+    background-color: #000000;
+    width: 100%;
+    margin-top: 20px;
+    height: 700px;
+    margin-left: 2%;
+    background-size: contain;
+}
+
+.EquipoTactico video{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.EquipoMedico{
+    background-color: #000000;
+    width: 100%;
+    margin-top: 20px;
+    height: 700px;
+    margin-left: 2%;
+}
+
+/* -------------------------------SECCION PRODUCTOS--------------------------------  */
+
+
+/* -------------------------------SECCION FOOTER--------------------------------  */
+.footer {
+    background-color: #252525;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.footer-content {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    width: 179px;
+    margin-top: 32px;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-social{
+    margin-left: -289px;
+    padding: 5px;
+    width: 155%;
+    margin-top: 20px;
+}
+.footer-social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 68px;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.barra-icon{
+    width: 610px;
+    height: 1px;
+    margin-bottom: 7px;
+    background-color: #ffffff;
+}
+/* -------------------------------SECCION FOOTER--------------------------------  */
+
+
+
+
+/* -------------------------------SECCION ANIMACIONES--------------------------------  */
+/* todas las animaciones pausadas */
+.paused * { 
+	animation-play-state: paused;
+}
+
+:root {
+    --animate-delay: 0.25s;
+  }
+/* -------------------------------SECCION ANIMACIONES--------------------------------  */
