@@ -5,13 +5,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
 
 
 /* -------------------------------SECCION TOPBAR--------------------------------  */
-.header{
+.header {
     background-color: #14262e;
     display: flex;
     justify-content: space-between;
@@ -21,44 +22,44 @@ body{
     z-index: 3;
 }
 
-.header .logo{
+.header .logo {
     cursor: pointer;
 }
 
-.header .logo img{
-    height: 70px;
+.header .logo img {
+    height: 95px;
     width: auto;
     transition: all 0.3s;
 }
 
-.header .logo img:hover{
+.header .logo img:hover {
     transform: scale(1.2);
 }
 
-.header .topMenu{
+.header .topMenu {
     list-style: none;
 }
 
-.header .topMenu li{
+.header .topMenu li {
     display: inline-block;
-    padding: 40px 94px;    
+    padding: 40px 94px;
 }
 
-.header .topMenu li:hover{
+.header .topMenu li:hover {
     transform: scale(1.1);
 }
 
-.header .topMenu a{
+.header .topMenu a {
     font-size: 20px;
     color: #eceff1;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
-.header .topMenu li a:hover{
+.header .topMenu li a:hover {
     color: #ffbc0e;
 }
 
-.header .btn button{
+.header .btn button {
     font-weight: 700;
     color: #1b3039;
     padding: 12px 32px;
@@ -69,7 +70,7 @@ body{
     transition: all 0.3s ease 0s;
 }
 
-.header .btn button:hover{
+.header .btn button:hover {
     background-color: #e2f1f8;
     color: #ffbc0e;
     transform: scale(1.1);
@@ -81,7 +82,7 @@ body{
     background-color: #42778e;
     min-width: 200px;
     margin-top: 12%;
-    z-index: 3; /* Z-index más alto para que esté por encima del carrusel */
+    /* Z-index más alto para que esté por encima del carrusel */
 }
 
 .header .topMenu li:hover .subMenu {
@@ -104,7 +105,7 @@ body{
     color: #ffbc0e;
 }
 
-.header .topMenu .subMenu li:hover{
+.header .topMenu .subMenu li:hover {
     background-color: #4e8ca7;
 }
 
@@ -133,14 +134,20 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    z-index: 2; /* Asegura que el texto esté encima de la capa oscura */
-    opacity: 1; /* Texto inicialmente invisible */
-    transition: opacity 0.3s ease; /* Transición suave de opacidad para el texto */
+    z-index: 2;
+    /* Asegura que el texto esté encima de la capa oscura */
+    opacity: 1;
+    /* Texto inicialmente invisible */
+    transition: opacity 0.3s ease;
+    /* Transición suave de opacidad para el texto */
 }
+
 .slider-section:hover .carousel-caption {
-    opacity: 1; /* Mostrar texto al pasar el mouse por encima */
-    
+    opacity: 1;
+    /* Mostrar texto al pasar el mouse por encima */
+
 }
+
 .slider-section::before {
     content: '';
     position: absolute;
@@ -148,15 +155,20 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(5, 5, 5, 0.5); /* Cambia el valor de "0.5" para ajustar la opacidad */
+    background-color: rgba(5, 5, 5, 0.5);
+    /* Cambia el valor de "0.5" para ajustar la opacidad */
     z-index: 2;
-    pointer-events: none; /* Evita que la capa afecte la interacción con el contenido */
-    transition: opacity 0.3s ease; /* Transición suave para el efecto de tono oscuro */
-    opacity: 1; /* La capa es inicialmente transparente */
+    pointer-events: none;
+    /* Evita que la capa afecte la interacción con el contenido */
+    transition: opacity 0.3s ease;
+    /* Transición suave para el efecto de tono oscuro */
+    opacity: 1;
+    /* La capa es inicialmente transparente */
 }
 
 .slider-section:hover::before {
-    opacity: 1; /* La capa se vuelve visible al pasar el mouse por encima */
+    opacity: 1;
+    /* La capa se vuelve visible al pasar el mouse por encima */
 }
 
 
@@ -199,7 +211,7 @@ body{
     font-weight: 600;
     cursor: pointer;
     color: #c7c7c7de;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     transition: 0.5s ease;
     user-select: none;
 }
@@ -221,13 +233,14 @@ body{
 /* -------------------------------SECCION CARRUSEL--------------------------------  */
 
 /* -------------------------------SECCION ABOUT--------------------------------  */
-#about{
+#about {
     height: 400px;
     position: relative;
     background-color: #0a1114;
     padding: 85px 0px 125px 0px;
 }
-.columna{
+
+.columna {
     max-width: 1140px;
     display: flex;
     margin-right: auto;
@@ -235,10 +248,12 @@ body{
     position: relative;
     width: 50%;
 }
-#cajaIzquierda{
+
+#cajaIzquierda {
     width: 50%;
 }
-.elementoIzquierda{
+
+.elementoIzquierda {
     margin: 0px 0px 0px 0px;
     padding: 18px 30px 18px 0px;
     border-style: solid;
@@ -248,9 +263,10 @@ body{
     align-content: center;
     align-items: center;
     padding: 10px;
-    
+
 }
-.elementoIzquierda h2{
+
+.elementoIzquierda h2 {
     color: #ffffff;
     font-family: "Tauri", Sans-serif;
     font-weight: 400;
@@ -263,46 +279,202 @@ body{
 }
 
 
-#cajaDerecha{
+#cajaDerecha {
     align-content: center;
     align-items: center;
     padding-left: 20px;
 }
 
-.elementoDerecha{
+.elementoDerecha {
     color: #ffffff;
     font-family: "Lato", Sans-serif;
     font-size: 2.1rem;
     font-weight: 500;
     line-height: 1.7em;
 }
-.elementoDerecha p{
+
+.elementoDerecha p {
     font-size: 20px;
 }
 
-.elementoDerecha a{
+.elementoDerecha a {
     text-decoration: none;
     color: #555;
 }
 
-.elementoDerecha a:hover{
-    color:#ffbc0e;
+.elementoDerecha a:hover {
+    color: #ffbc0e;
 }
 
 /* -------------------------------SECCION ABOUT--------------------------------  */
 
+/* -------------------------------SECCION NOSOTROS--------------------------------  */
+
+#nosotros {
+    width: auto;
+    height: 500px;
+    background-color: #000000;
+}
+
+.video-container {
+    top: 0%;
+    left: 0%;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#videoNosotros {
+    width: 100%;
+
+}
+
+.box-nosotros {
+    height: inherit;
+    width: -webkit-fill-available;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+    z-index: 1;
+
+}
+
+.box {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    margin: 3%;
+    position: relative;
+    perspective: 1000px;
+    transition: transform 0.8s ease;
+    /* Agrega transición suave al girar */
+    transform-style: preserve-3d;
+    /* Mantiene la perspectiva del contenido */
+    background-color: #32323259;
+
+}
+
+.box h3 {
+    font-size: 32px;
+    margin-bottom: 5%;
+}
+
+.box p {
+    width: 90%;
+    margin-inline: auto;
+    font-size: 18px;
+}
+
+
+.front,
+.back {
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    backface-visibility: hidden;
+    /* Oculta la parte trasera hasta que gire */
+    transition: transform 0.8s ease;
+    /* Agrega transición suave al girar */
+}
+
+.back {
+    display: none;
+    /* Inicialmente oculta la parte trasera */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+    /* Color de fondo de la parte trasera */
+    transform: rotateX(180deg);
+    /* Rotación inicial de la parte trasera */
+    transform-style: preserve-3d;
+    /* Mantiene la perspectiva del contenido */
+}
+
+.front {
+    transform: rotateX(0deg);
+    /* Sin rotación al principio */
+}
+
+.back {
+    transform: rotateY(180deg);
+    /* Rotación inicial de la parte trasera */
+    background-color: #0d7aad;
+    /* Color de fondo de la parte trasera */
+}
+
+#box-1:hover {
+    transform: rotateY(180deg);
+    /* Rotación al pasar el mouse */
+    border-style: none;
+}
+
+#box-2:hover {
+    transform: rotateY(180deg);
+    /* Rotación al pasar el mouse */
+    border-style: none;
+}
+
+#box-3:hover {
+    transform: rotateY(180deg);
+    /* Rotación al pasar el mouse */
+    border-style: none;
+}
+
+#box-1:hover .back {
+    display: block;
+    /* Muestra la parte trasera al pasar el mouse */
+}
+
+#box-2:hover .back {
+    display: block;
+    /* Muestra la parte trasera al pasar el mouse */
+}
+
+#box-3:hover .back {
+    display: block;
+    /* Muestra la parte trasera al pasar el mouse */
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* Mantiene la perspectiva del contenido */
+    transition: transform 0.8s ease;
+    /* Agrega transición suave al girar */
+}
+
+
+/* -------------------------------SECCION NOSOTROS--------------------------------  */
+
+
 /* -------------------------------SECCION SERVICIOS--------------------------------  */
-#servicios1{
+#servicios1 {
     height: 600px;
     position: relative;
-    background-color: #ffffff;   
+    background-color: #cdcdcd;
 }
-#servicios1 .imgServicio{
+
+#servicios1 .imgServicio {
     z-index: 2;
     padding-right: 6%;
-    margin: -81px 0px 0px -162px ;
+    margin: -81px 0px 0px -162px;
 }
-#servicios1 .infoServicio{
+
+#servicios1 .infoServicio {
     margin-right: -177px;
     text-align: left;
     margin-top: 80px;
@@ -311,13 +483,14 @@ body{
 
 
 
-#servicios2{
+#servicios2 {
     height: 600px;
     position: relative;
-    background-color: #000000;   
+    background-color: #000000;
 
 }
-#servicios2 .infoServicio{
+
+#servicios2 .infoServicio {
     color: white;
     margin-right: 114px;
     text-align: left;
@@ -325,89 +498,102 @@ body{
 
 }
 
-#servicios2 .infoServicio h2{
+#servicios2 .infoServicio h2 {
     color: white;
 }
-#servicios2 .infoServicio p{
+
+#servicios2 .infoServicio p {
     padding-bottom: 5%;
 }
-#servicios2 .imgServicio{
+
+#servicios2 .imgServicio {
     z-index: 2;
     padding-right: 6%;
     width: 324px;
     margin-top: -145px;
 }
-#servicios2 .imgServicio img{
+
+#servicios2 .imgServicio img {
     width: 800px;
-    
+
 }
-#servicios2 .btn-servicios button{
+
+#servicios2 .btn-servicios button {
     float: right;
 }
 
-#servicios2{
+#servicios2 {
     z-index: 2;
 }
 
 
-#servicios3{
+#servicios3 {
     height: 600px;
     position: relative;
-    background-color: #ffffff;   
+    background-color: #cdcdcd;
     z-index: 2;
 }
-#servicios3 .infoServicio{
+
+#servicios3 .infoServicio {
     margin-right: -193px;
     text-align: left;
     margin-top: 80px;
 }
-#servicios3 .imgServicio img{
+
+#servicios3 .imgServicio img {
     width: 826px;
     margin-left: -202px;
     margin-top: -58px;
 }
-#servicios3 .btn-servicios button{
+
+#servicios3 .btn-servicios button {
     float: right;
 }
 
 
-#servicios4{
+#servicios4 {
     height: 600px;
     position: relative;
-    background-color: #000000;   
+    background-color: #000000;
     z-index: 2;
 }
-#servicios4 .infoServicio{
+
+#servicios4 .infoServicio {
     color: white;
     text-align: left;
     margin-right: 53px;
     margin-top: 80px;
-  
+
 }
-#servicios4 .infoServicio h2{
+
+#servicios4 .infoServicio h2 {
     color: white;
 }
-#servicios4 .infoServicio p{
+
+#servicios4 .infoServicio p {
     margin-bottom: 20px;
 }
-#servicios4 .imgServicio{
+
+#servicios4 .imgServicio {
     z-index: 2;
     padding-right: 6%;
     width: 324px;
     margin-top: -145px;
 }
-#servicios4 .imgServicio{
+
+#servicios4 .imgServicio {
     z-index: 2;
     padding-right: 6%;
     width: 347px;
     margin-top: -75px;
     margin-left: 38px;
 }
-#servicios4 .imgServicio img{
+
+#servicios4 .imgServicio img {
     width: 823px;
 }
 
-.infoServicio{
+.infoServicio {
     margin: 0px 0px 0px 0px;
     padding: 18px 30px 18px 0px;
     text-align: right;
@@ -416,10 +602,12 @@ body{
     padding: 10px;
     display: inline-block;
 }
-.imgServicio{
+
+.imgServicio {
     display: inline-block;
 }
-.infoServicio h2{
+
+.infoServicio h2 {
     color: #303030;
     font-family: "Tauri", Sans-serif;
     font-weight: 700;
@@ -433,14 +621,15 @@ body{
     font-size: 27px;
 }
 
-.infoServicio p{
+.infoServicio p {
     font-family: "Lato", Sans-serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 1.7em;
     padding-top: 9%;
 }
-.btn-servicios button{
+
+.btn-servicios button {
     float: right;
     font-size: 18px;
     padding: 9px;
@@ -450,12 +639,13 @@ body{
     color: #ffffff;
     background-color: #ffbc0e;
     border: solid;
-    border-width:2px;
+    border-width: 2px;
     border-color: #ffbb0eca;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-.btn-servicios button:hover{
+
+.btn-servicios button:hover {
     background-color: #ffffff;
     color: #000000;
 }
@@ -465,38 +655,23 @@ body{
 
 
 /* -------------------------------SECCION PRODUCTOS--------------------------------  */
-#productos{
-    height: 800px;
-    background-color: #ffffff;
-    position: relative;
-    z-index: 2;
-    align-items: center;
+
+#productos {
+    width: 100%;
+
 }
 
-#productos .columna{
-    width: 100%;
-}
-.EquipoTactico{
-    background-color: #000000;
-    width: 100%;
-    margin-top: 20px;
-    height: 700px;
-    margin-left: 2%;
-    background-size: contain;
-}
-
-.EquipoTactico video{
+.equipo {
     position: relative;
-    width: 100%;
     display: flex;
-}
-
-.EquipoMedico{
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
     background-color: #000000;
-    width: 100%;
-    margin-top: 20px;
-    height: 700px;
-    margin-left: 2%;
+    border-radius: 2px;
+    border-style: solid;
+    width: 50%;
+    height: 80%;
 }
 
 /* -------------------------------SECCION PRODUCTOS--------------------------------  */
@@ -507,6 +682,7 @@ body{
     background-color: #252525;
     color: #fff;
     padding: 20px 0;
+    justify-content: end;
 }
 
 .container {
@@ -541,12 +717,14 @@ body{
     color: #fff;
     text-decoration: none;
 }
-.footer-social{
+
+.footer-social {
     margin-left: -289px;
     padding: 5px;
     width: 155%;
     margin-top: 20px;
 }
+
 .footer-social ul {
     list-style-type: none;
     margin: 0;
@@ -569,12 +747,13 @@ body{
     margin-top: 20px;
 }
 
-.barra-icon{
+.barra-icon {
     width: 610px;
     height: 1px;
     margin-bottom: 7px;
     background-color: #ffffff;
 }
+
 /* -------------------------------SECCION FOOTER--------------------------------  */
 
 
@@ -582,11 +761,12 @@ body{
 
 /* -------------------------------SECCION ANIMACIONES--------------------------------  */
 /* todas las animaciones pausadas */
-.paused * { 
-	animation-play-state: paused;
+.paused * {
+    animation-play-state: paused;
 }
 
 :root {
     --animate-delay: 0.25s;
-  }
+}
+
 /* -------------------------------SECCION ANIMACIONES--------------------------------  */
