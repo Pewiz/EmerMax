@@ -60,7 +60,7 @@ body {
 }
 
 .header .topMenu a {
-    font-size: 20px;
+    font-size: 26px;
     color: #eceff1;
     text-decoration: none;
 }
@@ -188,7 +188,7 @@ body {
 }
 
 .carousel-caption p {
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin-top: 2%;
 }
 
@@ -383,6 +383,7 @@ body {
     width: 90%;
     margin-inline: auto;
     font-size: 16px;
+    text-align: justify;
 }
 
 
@@ -724,6 +725,7 @@ body {
 
 .overlay-text p {
     margin-top: 7%;
+    font-size: 20px
 }
 
 .overlay-text button {
