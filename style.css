@@ -91,7 +91,7 @@ body {
     position: absolute;
     background-color: #42778e;
     min-width: 200px;
-    margin-top: 11%;
+    margin-top: 9%;
     /* Z-index más alto para que esté por encima del carrusel */
 }
 
@@ -526,11 +526,12 @@ body {
 }
 
 #servicios2 .imgServicio img {
-    mask-image: linear-gradient(to left, black 70%, transparent);
+    mask-image: linear-gradient(to right, black 70%, transparent);
 }
 
 #servicios2 .imgServicio img {
-    width: 732px;
+    width: 800px;
+    transform: scaleX(-1);
 
 }
 
@@ -564,6 +565,7 @@ body {
 
 #servicios3 .btn-servicios button {
     float: right;
+    margin-top: 6%;
 }
 
 
@@ -606,7 +608,14 @@ body {
 }
 
 #servicios4 .imgServicio img {
-    width: 823px;
+    width: 523px;
+    margin-top: -22%;
+    mask-image:
+        linear-gradient(to right, black 99%, transparent),
+        linear-gradient(to left, black 98%, transparent),
+        linear-gradient(to bottom, black 95%, transparent);
+    mask-composite: intersect;
+
 }
 
 .infoServicio {
@@ -982,7 +991,7 @@ ul li .descr {
 }
 
 #LogoNorma2728 {
-    width: 5.5%;
+    width: 5.2%;
     padding: unset;
 }
 
