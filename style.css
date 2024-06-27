@@ -1260,10 +1260,10 @@ li {
         width: 80%;
     }
     #servicios2 .imgServicio img {
-        /* width: 485px;
+        width: 565px;
         height: 600px;
         object-fit: cover;
-        object-position: right center;*/
+        object-position: right center;
         mask-image: linear-gradient(to right, black 95%, transparent);
     }
     #servicios2 .columna{
