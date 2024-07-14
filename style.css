@@ -119,6 +119,82 @@ body {
     background-color: #4e8ca7;
 }
 
+
+.topMenuMovil{
+    position: absolute;
+    right: 2.3rem;
+    top: 100px;
+    width: 300px;
+    background: #0c1b2773;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.topMenuMovil li{
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.topMenuMovil li a:hover {
+    color: #ffbc0e;
+    
+}
+.topMenuMovil li:hover{
+    background-color: #0c1b2752;
+}
+
+.topMenuMovil a{
+    font-size: 20px;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.topMenuMovil .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.topMenuMovil .btn button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btnTopMenuMovil li:hover{
+    background-color: initial;
+}
+
+.botonActivacionBarra{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+.subMenuMovil{
+    background-color: #0c1b27d2 ;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+
+.subMenuMovil a{
+    font-size: 17px;
+}
+.subMenuMovil li:hover{
+    transform: scale(1.1);
+}
 /* -------------------------------SECCION TOPBAR--------------------------------  */
 
 
@@ -1706,7 +1782,7 @@ li {
     }
 }
 
-@media (max-width: 797px){
+@media (max-width: 808px){
     .header .topMenu a {
         font-size: 20px;
     }
@@ -1749,6 +1825,19 @@ li {
     }
     .header .topMenu a{
         font-size: 22px;
+    }
+
+    .topMenu, .btn{
+        display: none;
+    }
+    .topMenuMovil.open{
+        height: auto;
+    }
+    .botonActivacionBarra{
+        display: block;
+    }
+    .subMenuMovil.open{
+        height: auto;
     }
 
     .carousel-caption p{
@@ -1850,16 +1939,24 @@ li {
     #descripcionCurso{
         width: 85%;
     }
+
+
+
     /*-----------------------------------------------Responsive paginas servicios 768-----------------------------------------------*/
     /*----------------------------------------------------------------------------------------------*/
 
 }
 
 
-/*-----------------------------------------------Responsive pagina principal 768-----------------------------------------------*/
+/*-----------------------------------------------Responsive pagina principal 576-----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
-
-/*-----------------------------------------------Responsive paginas servicios 768-----------------------------------------------*/
+@media (max-width: 576px){
+    .topMenuMovil{
+        left: 2rem;
+        width: unset;
+    }
+}
+/*-----------------------------------------------Responsive paginas servicios 576-----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 
 /*-----------------------------------------------Responsive paginas servicios 768-----------------------------------------------*/

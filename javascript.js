@@ -81,3 +81,33 @@ window.addEventListener('DOMContentLoaded', (ev0) => {
 
 
 
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}
+
+const accionBoton = document.querySelector('.botonActivacionBarra')
+const accionBotonIcono = document.querySelector('.botonActivacionBarra i')
+const topMenuMovil = document.querySelector('.topMenuMovil')
+const accionEquipamiento = document.querySelector('.equipamiento')
+const subMenuEquipamiento= document.querySelector('.subMenuMovil.equipamiento')
+const accionCapacitaciones = document.querySelector('.capacitaciones')
+const subMenuCapacitacion = document.querySelector('.subMenuMovil.capacitaciones')
+
+
+accionBoton.onclick = function(){
+    topMenuMovil.classList.toggle('open')
+    const isOpen = topMenuMovil.classList.contains('open')
+    accionBotonIcono.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+}
+
+accionEquipamiento.onclick = function(){
+    subMenuEquipamiento.classList.toggle('open')
+}
+
+accionCapacitaciones.onclick=function(){
+    subMenuCapacitacion.classList.toggle('open')
+}
