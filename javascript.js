@@ -96,7 +96,15 @@ const accionEquipamiento = document.querySelector('.equipamiento')
 const subMenuEquipamiento= document.querySelector('.subMenuMovil.equipamiento')
 const accionCapacitaciones = document.querySelector('.capacitaciones')
 const subMenuCapacitacion = document.querySelector('.subMenuMovil.capacitaciones')
-
+const accionCursos1 = document.querySelector('.cursos1')
+const subMenuCursos1 = document.querySelector('.subMenuMovilC.capacitaciones.cursos1')
+const accionCursos2 = document.querySelector('.cursos2')
+const subMenuCursos2 = document.querySelector('.subMenuMovilC.capacitaciones.cursos2')
+const accionCursos1Top = document.querySelector('.cursos1Top')
+const subMenuCursos1Top = document.querySelector('.subMenuCursos.tcursos1')
+const accionCursos2Top = document.querySelector('.cursos2Top')
+const subMenuCursos2Top = document.querySelector('.subMenuCursos.tcursos2')
+const topMenu = document.querySelector('.topMenu');
 
 accionBoton.onclick = function(){
     topMenuMovil.classList.toggle('open')
@@ -104,10 +112,56 @@ accionBoton.onclick = function(){
     accionBotonIcono.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
 }
 
-accionEquipamiento.onclick = function(){
-    subMenuEquipamiento.classList.toggle('open')
+accionEquipamiento.onclick = function() {
+    if (subMenuEquipamiento.classList.contains('open')) {
+        subMenuEquipamiento.classList.remove('open')
+    } else {
+        subMenuCapacitacion.classList.remove('open')
+        subMenuCursos1.classList.remove('open')
+        subMenuCursos2.classList.remove('open')
+        subMenuEquipamiento.classList.add('open')
+    }
 }
 
-accionCapacitaciones.onclick=function(){
-    subMenuCapacitacion.classList.toggle('open')
+accionCapacitaciones.onclick = function() {
+    if (subMenuCapacitacion.classList.contains('open')) {
+        subMenuCapacitacion.classList.remove('open')
+    } else {
+        subMenuEquipamiento.classList.remove('open')
+        subMenuCapacitacion.classList.add('open')
+    }
 }
+
+accionCursos1.onclick = function(event) {
+    event.stopPropagation(); // Evita que el clic se propague al menú principal
+    if (subMenuCursos1.classList.contains('open')) {
+        subMenuCursos1.classList.remove('open')
+    } else {
+        subMenuCursos2.classList.remove('open')
+        subMenuCursos1.classList.add('open')
+    }
+}
+
+accionCursos2.onclick = function(event) {
+    event.stopPropagation(); 
+    if (subMenuCursos2.classList.contains('open')) {
+        subMenuCursos2.classList.remove('open')
+    } else {
+        subMenuCursos1.classList.remove('open')
+        subMenuCursos2.classList.add('open')
+    }
+}
+
+accionCursos1Top.onclick = function(){
+    subMenuCursos1Top.classList.toggle('open')
+}
+
+accionCursos2Top.onclick = function(){
+    subMenuCursos2Top.classList.toggle('open')
+}
+
+
+topMenu.addEventListener('mouseleave', function() {
+    subMenuCursos1Top.classList.remove('open')
+    subMenuCursos2Top.classList.remove('open')
+});

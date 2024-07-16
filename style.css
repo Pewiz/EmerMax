@@ -55,9 +55,9 @@ body {
     padding: 40px 94px;
 }
 
-.header .topMenu li:hover {
+/*.header .topMenu li:hover {
     transform: scale(1.1);
-}
+}*/
 
 .header .topMenu a {
     font-size: 26px;
@@ -89,15 +89,18 @@ body {
 .subMenu {
     display: none;
     position: absolute;
-    background-color: #42778e;
+    background: #18364ead;
+    backdrop-filter: blur(15px);
     min-width: 200px;
-    margin-top: 9%;
-    /* Z-index más alto para que esté por encima del carrusel */
+    margin-top: 39px;
+    width: 15vw;
 }
 
 .header .topMenu li:hover .subMenu {
     display: block;
 }
+
+
 
 .header .topMenu .subMenu li {
     display: block;
@@ -116,15 +119,18 @@ body {
 }
 
 .header .topMenu .subMenu li:hover {
-    background-color: #4e8ca7;
+    background-color: #0c1b2752;
 }
 
+.header .topMenu .subMenu .subMenuCursos  li:hover{
+    background-color: #20486678;
+}
 
 .topMenuMovil{
     position: absolute;
     right: 2.3rem;
     top: 100px;
-    width: 300px;
+    width: 330px;
     background: #0c1b2773;
     backdrop-filter: blur(15px);
     border-radius: 10px;
@@ -178,7 +184,7 @@ body {
 
 }
 
-.subMenuMovil{
+.subMenuMovil, .subMenuMovilC, .subMenuCursos{
     background-color: #0c1b27d2 ;
     width: 100%;
     margin-top: 20px;
@@ -188,12 +194,24 @@ body {
     transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     
 }
-
-.subMenuMovil a{
+.subMenuCursos{
+    background-color: #4395b9;
+}
+.subMenuMovilC{
+    background-color: #42778e;
+}
+.subMenuMovil a, .subMenuMovilC a{
     font-size: 17px;
 }
 .subMenuMovil li:hover{
-    transform: scale(1.1);
+    background-color: initial;
+}
+
+.subMenuCursos.open{
+    height: auto;
+}
+.subMenuCursos.open li:hover{
+    transform: scale(1);
 }
 /* -------------------------------SECCION TOPBAR--------------------------------  */
 
@@ -374,6 +392,10 @@ body {
     align-content: center;
     align-items: center;
     padding-left: 20px;
+}
+
+.cajaDerechaMovil{
+    display: none;
 }
 
 .elementoDerecha {
@@ -618,6 +640,7 @@ body {
     object-fit: cover;
     object-position: right center;
     transform: scaleX(-1);
+    overflow: hidden;
 
 }
 
@@ -635,6 +658,7 @@ body {
     position: relative;
     background-color: #cdcdcd;
     z-index: 2;
+    overflow: hidden;
 }
 
 #servicios3 .infoServicio {
@@ -660,6 +684,7 @@ body {
     position: relative;
     background-color: #000000;
     z-index: 2;
+    overflow: hidden;
 }
 
 #servicios4 .infoServicio {
@@ -695,12 +720,13 @@ body {
 
 #servicios4 .imgServicio img {
     width: 523px;
-    margin-top: -22%;
+    margin-top: -8%;
     mask-image:
         linear-gradient(to right, black 99%, transparent),
         linear-gradient(to left, black 98%, transparent),
         linear-gradient(to bottom, black 95%, transparent);
     mask-composite: intersect;
+    overflow: hidden;
 
 }
 
@@ -876,7 +902,7 @@ body {
 .cuerpoProductos {
     --color: rgba(30, 30, 30);
     --bgColor: rgba(245, 245, 245);
-    min-height: 100vh;
+    min-height: 50vh;
 
     display: grid;
     align-content: center;
@@ -1035,7 +1061,12 @@ ul li .descr {
     padding: 1%;
 }
 
-
+.footer-logo.soloEmermax{
+    display: none;
+}
+.footer-logo.abajoEmermax{
+    display: none;
+}
 
 .footer-menu ul {
     list-style-type: none;
@@ -1343,7 +1374,7 @@ li {
         margin-top: 0%;
     }
     .header .topMenu a{
-        padding: 13% 0%;
+        padding: 13% 0% 41px 0%;
     }
     .header .topMenu li {
         padding: 0px 36px;
@@ -1459,7 +1490,6 @@ li {
     }
     #cuerpoProductosAbajo{
         display: initial;
-        height: 500px;
     }
     #cuerpoProductosAbajo .cuerpoProductos{
         display: flex;
@@ -1623,6 +1653,7 @@ li {
     }
     #servicios4 .imgServicio img{
         width: 417px;
+        margin-top: -20%;
     }
     #servicios4 .infoServicio{
         width: auto;
@@ -1830,19 +1861,17 @@ li {
     .topMenu, .btn{
         display: none;
     }
-    .topMenuMovil.open{
+    .topMenuMovil.open, .subMenuMovil.open, .subMenuMovilC.open{
         height: auto;
     }
     .botonActivacionBarra{
         display: block;
     }
-    .subMenuMovil.open{
-        height: auto;
-    }
 
     .carousel-caption p{
         font-size: 1.3rem;
     }
+
 
     
     #cajaIzquierda{
@@ -1947,24 +1976,309 @@ li {
 
 }
 
-
-/*-----------------------------------------------Responsive pagina principal 576-----------------------------------------------*/
+/*-----------------------------------------------Responsive paginas servicios 759-----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
+
+@media(max-width: 759px){
+    #cajasT{
+        flex-direction: column;
+    }
+    .equipo{
+        width: 450px;
+        height: 550px;
+    }
+}
+
+@media (max-width: 691px){
+    .carousel-caption p {
+        font-size: 1.1rem;
+    }
+    #servicios1 .columna, 
+    #servicios3 .columna{
+        flex-direction: column-reverse;
+    }
+    #servicios2 .columna, 
+    #servicios4 .columna{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    #servicios1, 
+    #servicios2, 
+    #servicios3, 
+    #servicios4{
+        height: auto;
+    }
+    #servicios1 .infoServicio{
+        margin: 60px 0px 0px 0px;
+    }
+    #servicios1 .imgServicio{
+        margin: 47px 0px 0px 70px;
+    }
+
+    #servicios2 .animate__fadeInRight,
+    #servicios4 .animate__fadeInRight{
+        width: 100%;
+    }
+    #servicios2 .infoServicio,
+    #servicios4 .infoServicio{
+        height: auto;
+        width: 100%;
+        margin: 60px 0px 0px 0px;
+    }
+    #servicios2 .imgServicio{
+        margin: 0px 0px 0px -110px;
+    }
+    #servicios2 .imgServicio img{
+        height: 350px;
+        width: 440px;
+        mask-image: linear-gradient(to right, black 95%, transparent), linear-gradient(to left, black 93%, transparent), linear-gradient(to top, black 93%, transparent);
+    }
+    #servicios3 .columna{
+        width: 80%;
+    }
+    #servicios3 .infoServicio{
+        margin-right: 0px;
+    }
+    #servicios3 .imgServicio img{
+        width: 500px;
+        margin: -40px 0px 0px 40px;
+    }
+
+
+
+
+    #producto{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 8% 0 7% 0;
+    }
+    .descripcionProducto{
+        width: 80%;
+        margin: 5% 0%;
+    }
+    .btnComprar{
+        margin-top: 1%;
+    }
+    .foto-producto{
+        width: 500px;
+    }
+}
+@media(max-width: 650px){
+    
+    #about .columna {
+        width: 75%;
+        flex-direction: column;
+    }
+    #about{
+        height: auto;
+    }
+    #cajaIzquierda {
+        width: 100%;
+    }
+    .elementoIzquierda{
+        border-width: 0px 0px 2px 0px;
+        margin: 0px 0px 20px 0px;
+        text-align: left;
+    }
+    .elementoDerecha{
+        text-align: center;
+    }
+    #cajaDerecha{
+        padding-left: 0px;
+        display: none;
+    }
+
+    .cajaDerechaMovil {
+        display: block;
+    }
+    
+    .elementoDerecha p{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box-nosotros{
+        flex-direction: column;
+    }
+    #nosotros{
+        height: 650px;
+    }
+    .box{
+        width: 80%;
+    }
+    .box p{
+        font-size: 17px;
+    }
+    .video-container{
+        height: inherit;
+    }
+    #videoNosotros{
+        height: inherit;
+    }
+}
+@media (max-width: 623px){
+    #servicios1 .imgServicio {
+        margin: 47px 0px 0px 25px;
+    }
+    #servicios2 .imgServicio {
+        margin: 0px 0px 0px -180px;
+    }
+    #servicios3 .imgServicio img {
+        margin: -40px 0px 0px 10px;
+    }
+    
+    
+}
 @media (max-width: 576px){
     .topMenuMovil{
         left: 2rem;
         width: unset;
     }
+
+    .footer-social ul li{
+        padding: 0% 20px;
+    }
+    .barra-icon{
+        width: 120px;
+    }
+
+    .footer-logo{
+        display: none;
+    }
+    .footer-logo.soloEmermax,
+    .footer-logo.abajoEmermax{
+        display: block;
+    }
 }
-/*-----------------------------------------------Responsive paginas servicios 576-----------------------------------------------*/
-/*----------------------------------------------------------------------------------------------*/
 
-/*-----------------------------------------------Responsive paginas servicios 768-----------------------------------------------*/
-/*----------------------------------------------------------------------------------------------*/
+@media (max-width: 550px){
+    #servicios1 .imgServicio {
+        margin: 47px 0px 0px 0px;
+        padding-right: 0%;
+    }
+    #servicios3 .imgServicio img {
+        margin: -40px 0px 0px -30px;
+    }
+    
+    #servicios3 .imgServicio img {
+        height: auto;
+        width: 400px;
+        margin: 20px 0px 0px 0px;
+    }
 
-/*-----------------------------------------------Responsive pagina principal 425-----------------------------------------------*/
-/*----------------------------------------------------------------------------------------------*/
+    .box p {
+        font-size: 15px;
+    }
+
+    .foto-producto {
+        width: 380px;
+        height: 380px;
+    }
+
+    
+}
+
+@media (max-width: 482px){
+    #servicios1 .imgServicio img{
+        width: 380px;
+    }
+    #servicios2 .imgServicio{
+        margin: 0px 0px 0px -130px;
+    }
+    #servicios2 .imgServicio img{
+        width: 370px;
+    }
+    .equipo {
+        width: 350px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 440px){
+    .barra-icon{
+        width: 80px;
+    }
+}
+
+@media (max-width: 425px){
+    #about {
+        padding: 50px 0px 125px 0px;
+    }
+
+    #servicios1 .imgServicio img {
+        width: 320px;
+    }
+    #servicios3 .imgServicio img {
+        width: 350px;
+        margin: 40px 0px 0px 0px;
+    }
 
 
-/*-----------------------------------------------Responsive pagina principal 425-----------------------------------------------*/
-/*----------------------------------------------------------------------------------------------*/
+
+    #descripcionCurso header {
+        margin-bottom: 20px;
+    }
+    .foto-producto {
+        width: 310px;
+        height: 310px;
+    }
+}
+
+@media (max-width: 380px){
+
+    #about {
+        padding: 50px 0px;
+        
+    }
+    #about .columna{
+        width: 90%;
+    }
+    .box{
+        width: 100%;
+    }
+    .elementoDerecha p{
+        display: flex;
+        flex-direction: column;
+    }
+    #servicios1 .imgServicio img {
+        width: 280px;
+    }
+    #servicios2 .imgServicio {
+        margin: 0px 0px 0px -50px;
+    }
+    #servicios2 .imgServicio img {
+        width: 310px;
+    }
+    #servicios3 .imgServicio img {
+        width: 290px;
+    }
+    #servicios4 .imgServicio {
+        margin-left: 67px;
+    }
+    #servicios4 .imgServicio img {
+        width: 300px;
+    }
+
+    .equipo {
+        width: 300px;
+        height: 450px;
+    }
+    .overlay-text{
+        top: 62%;
+    }
+    .barra-icon {
+        width: 50px;
+    }
+}
+
+@media (max-width: 320px){
+    .equipo {
+        width: 280px;
+        height: 450px;
+    }
+    .foto-producto {
+        width: 260px;
+        height: 300px;
+    }
+}
