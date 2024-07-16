@@ -344,6 +344,7 @@ body {
     position: relative;
     background-color: #0a1114;
     padding: 85px 0px 125px 0px;
+    overflow: hidden;
 }
 
 .columna {
@@ -577,6 +578,11 @@ body {
 
 
 /* -------------------------------SECCION SERVICIOS--------------------------------  */
+
+.infoServicio{
+    overflow: hidden;
+}
+
 #servicios1 {
     height: 600px;
     position: relative;
