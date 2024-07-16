@@ -59,6 +59,7 @@ body {
     transform: scale(1.1);
 }*/
 
+
 .header .topMenu a {
     font-size: 26px;
     color: #eceff1;
@@ -373,6 +374,7 @@ body {
     align-content: center;
     align-items: center;
     padding: 10px;
+    overflow: hidden;
 
 }
 
@@ -587,6 +589,7 @@ body {
     height: 600px;
     position: relative;
     background-color: #cdcdcd;
+    overflow: hidden;
 }
 
 #servicios1 .imgServicio {
@@ -600,6 +603,7 @@ body {
     text-align: left;
     margin-top: 80px;
     margin-left: 50px;
+    overflow: hidden;
 }
 
 
@@ -608,6 +612,7 @@ body {
     height: 600px;
     position: relative;
     background-color: #000000;
+    overflow: hidden;
 
 }
 
