@@ -461,120 +461,62 @@ body {
 
 }
 
-.box {
-    border-width: 2px;
-    border-color: white;
-    border-style: solid;
-    height: 50%;
-    width: 50%;
-    text-align: center;
-    margin: 3%;
-    position: relative;
+    
+.card {
+    width: 500px;
+    height: 300px;
     perspective: 1000px;
-    transition: transform 0.8s ease;
-    /* Agrega transición suave al girar */
-    transform-style: preserve-3d;
-    /* Mantiene la perspectiva del contenido */
-    background-color: #32323259;
-
+    margin: 2%;
 }
 
-.box h3 {
-    font-size: 32px;
-    margin-bottom: 5%;
-}
-
-.box p {
-    width: 90%;
-    margin-inline: auto;
-    font-size: 16px;
-    text-align: justify;
-}
-
-
-.front,
-.back {
-    /*position: absolute;*/
+.card-inner {
     width: 100%;
     height: 100%;
-    align-content: center;
-    backface-visibility: hidden;
-    /* Oculta la parte trasera hasta que gire */
-    transition: transform 0.8s ease;
-    /* Agrega transición suave al girar */
-}
-
-.back {
-    display: none;
-    /* Inicialmente oculta la parte trasera */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #e0e0e0;
-    /* Color de fondo de la parte trasera */
-    transform: rotateX(180deg);
-    /* Rotación inicial de la parte trasera */
-    transform-style: preserve-3d;
-    /* Mantiene la perspectiva del contenido */
-}
-
-.front {
-    transform: rotateX(0deg);
-    /* Sin rotación al principio */
-}
-
-.back {
-    transform: rotateY(180deg);
-    /* Rotación inicial de la parte trasera */
-    background-color: #0d7aad;
-    /* Color de fondo de la parte trasera */
-}
-
-#box-1:hover {
-    transform: rotateY(180deg);
-    /* Rotación al pasar el mouse */
-    border-style: none;
-}
-
-#box-2:hover {
-    transform: rotateY(180deg);
-    /* Rotación al pasar el mouse */
-    border-style: none;
-}
-
-#box-3:hover {
-    transform: rotateY(180deg);
-    /* Rotación al pasar el mouse */
-    border-style: none;
-}
-
-#box-1:hover .back {
-    display: block;
-    /* Muestra la parte trasera al pasar el mouse */
-}
-
-#box-2:hover .back {
-    display: block;
-    /* Muestra la parte trasera al pasar el mouse */
-}
-
-#box-3:hover .back {
-    display: block;
-    /* Muestra la parte trasera al pasar el mouse */
-}
-
-.content {
     position: relative;
-    width: 100%;
-    height: 100%;
     transform-style: preserve-3d;
-    /* Mantiene la perspectiva del contenido */
-    transition: transform 0.8s ease;
-    /* Agrega transición suave al girar */
+    transition: transform 0.999s;
 }
 
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.fa-lg{
+    line-height: normal !important;
+}
+.card-front {
+    background-color: #32323259;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 30px;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    background-color: #0d7aad;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 20px solid #0d7aad;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 22px;
+    transform: rotateY(180deg);
+}
 
 /* -------------------------------SECCION NOSOTROS--------------------------------  */
 
@@ -595,7 +537,11 @@ body {
 #servicios1 .imgServicio {
     z-index: 2;
     padding-right: 6%;
-    margin: -81px 0px 0px -162px;
+    margin: 10px 0px 0px -162px;
+}
+
+#servicios1 .imgServicio img{
+    width: 600px;
 }
 
 #servicios1 .infoServicio {
@@ -1390,6 +1336,9 @@ li {
     .header .topMenu li {
         padding: 0px 36px;
     }
+    .card-back p{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 1665px){
@@ -1426,7 +1375,7 @@ li {
 
     /*-------------------------Servicios----------------------*/
     #servicios1 .imgServicio{
-        margin: -81px 0px 0px -231px;
+        margin: 0px 0px 0px -231px;
     }
     #servicios1 .infoServicio{
         margin-top: 45px;
@@ -1542,6 +1491,9 @@ li {
     #servicios4 .columna{
         width: 82%;
     }
+    .card-back p{
+        font-size: 19px;
+    }
 }
 
 @media (max-width: 1218px){
@@ -1575,6 +1527,12 @@ li {
         width: 450px;
         height: 585px;
     }
+    .card-back p{
+        font-size: 17px;
+    }
+    .card-front{
+        font-size: 25px;
+    } 
 
 }
 @media (max-width:1136px){
@@ -1615,7 +1573,7 @@ li {
     #about .columna{
         width: 86%;
     }
-    .box h3{
+    .card-back, .card-front h3{
         font-size: 27px;
     }
 
@@ -1759,6 +1717,7 @@ li {
     #descripcionCurso{
         width: 85%;
     }
+
 }
 
 
@@ -1768,6 +1727,9 @@ li {
     }
     .elementoIzquierda {
         margin: 0% 0% 0% 8%;
+    }
+    .card-back p{
+        font-size: 15px;
     }
 }
 
@@ -1856,6 +1818,9 @@ li {
     #servicios4 .imgServicio img {
         width: 359px;
     }
+    .card-back p{
+        font-size: 14px;
+    }
 }
 
 
@@ -1892,7 +1857,7 @@ li {
         margin: 0px 0px 0px 0px;
     }
     
-    .box p{
+    .card-front, .card-back p{
         font-size: 13px;
     }
 
@@ -1998,6 +1963,10 @@ li {
         width: 450px;
         height: 550px;
     }
+    .card-back p{
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 691px){
@@ -2115,10 +2084,7 @@ li {
     #nosotros{
         height: 650px;
     }
-    .box{
-        width: 80%;
-    }
-    .box p{
+    .card-back p{
         font-size: 17px;
     }
     .video-container{
@@ -2178,8 +2144,8 @@ li {
         margin: 20px 0px 0px 0px;
     }
 
-    .box p {
-        font-size: 15px;
+    .card{
+        width: 400px;
     }
 
     .foto-producto {
@@ -2210,6 +2176,12 @@ li {
     .barra-icon{
         width: 80px;
     }
+    .card-back p{
+        font-size: 14px;
+    }
+    .card{
+        width: 320px;
+    }
 }
 
 @media (max-width: 425px){
@@ -2225,14 +2197,16 @@ li {
         margin: 40px 0px 0px 0px;
     }
 
+    .card-back, .card-front h3 {
+        font-size: 22px;
 
-
-    #descripcionCurso header {
-        margin-bottom: 20px;
-    }
-    .foto-producto {
-        width: 310px;
-        height: 310px;
+        #descripcionCurso header {
+            margin-bottom: 20px;
+        }
+        .foto-producto {
+            width: 310px;
+            height: 310px;
+        }
     }
 }
 
@@ -2281,6 +2255,12 @@ li {
     .barra-icon {
         width: 50px;
     }
+    .card{
+        width: 260px;
+    }
+    .card-back p{
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 320px){
@@ -2292,4 +2272,5 @@ li {
         width: 260px;
         height: 300px;
     }
+
 }
