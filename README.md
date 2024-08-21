@@ -26,7 +26,7 @@ Para poder visualizar el sitio basta solo con ingresar al siguiente enlace: [Eme
 
 ## Instalación 
 
-Para ver el proyecto en tu máquina local, sigue estos pasos:
+Para ver el proyecto de forma local, sigue estos pasos:
 
 1. Clona el repositorio:
 
