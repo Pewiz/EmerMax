@@ -1138,7 +1138,7 @@ ul li .descr {
 
 /*slider-section*/
     {
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     height: 100%;
 }
 
@@ -1158,7 +1158,7 @@ ul li .descr {
 
 /*carruseles*/
     {
-    width: 400%;
+    width: 500%;
     height: 100%;
     display: flex;
 
