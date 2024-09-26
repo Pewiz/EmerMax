@@ -2219,7 +2219,36 @@ li {
         width: 500px;
     }
 }
-@media(max-width: 650px){
+
+
+@media (max-width: 550px){
+    #servicios1 .imgServicio {
+        margin: 47px 0px 0px 0px;
+        padding-right: 0%;
+    }
+    #servicios3 .imgServicio img {
+        margin: -40px 0px 0px -30px;
+    }
+    
+    #servicios3 .imgServicio img {
+        height: auto;
+        width: 400px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .card{
+        width: 400px;
+    }
+
+    .foto-producto {
+        width: 380px;
+        height: 380px;
+    }
+
+    
+}
+
+@media (max-width: 650px){
     
     #about .columna {
         width: 75%;
@@ -2304,32 +2333,6 @@ li {
     }
 }
 
-@media (max-width: 550px){
-    #servicios1 .imgServicio {
-        margin: 47px 0px 0px 0px;
-        padding-right: 0%;
-    }
-    #servicios3 .imgServicio img {
-        margin: -40px 0px 0px -30px;
-    }
-    
-    #servicios3 .imgServicio img {
-        height: auto;
-        width: 400px;
-        margin: 20px 0px 0px 0px;
-    }
-
-    .card{
-        width: 400px;
-    }
-
-    .foto-producto {
-        width: 380px;
-        height: 380px;
-    }
-
-    
-}
 
 @media (max-width: 482px){
     #servicios1 .imgServicio img{
