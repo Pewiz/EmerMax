@@ -13,7 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-
+    position: relative;
 }
 
 /*-----------------------------------------------PAG_PRINCIPAL-----------------------------------------------*/
@@ -465,7 +465,6 @@ body {
 .card {
     width: 500px;
     height: 300px;
-    perspective: 1000px;
     margin: 2%;
 }
 
@@ -2449,4 +2448,26 @@ li {
         height: 300px;
     }
 
+}
+
+
+
+.carrito{
+    background-color: #e3e3e3;
+    width: 330px;
+    height: -webkit-fill-available;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 5;
+    padding: 10px;
+}
+
+.carrito-top{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    font-size: 19px;
+    margin-top: 10px;
 }
