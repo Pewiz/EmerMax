@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    position: relative;
+}
+
+/* -------------------------------SECCION TOPBAR--------------------------------  */
+.header {
+    background-color: #0c1b27;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    padding: 1px 6%;
+    z-index: 3;
+    position: relative;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 95px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .topMenu {
+    list-style: none;
+}
+
+.header .topMenu li {
+    display: inline-block;
+    padding: 40px 94px;
+}
+
+/*.header .topMenu li:hover {
+    transform: scale(1.1);
+}*/
+
+
+.header .topMenu a {
+    font-size: 22px;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.header .topMenu li a:hover {
+    color: #ffbc0e;
+}
+
+.header .btn button {
+    font-weight: 700;
+    color: #1b3039;
+    padding: 12px 32px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    background: #18364ead;
+    backdrop-filter: blur(15px);
+    min-width: 200px;
+    margin-top: 39px;
+    width: 15vw;
+}
+
+.header .topMenu li:hover .subMenu {
+    display: block;
+}
+
+
+
+.header .topMenu .subMenu li {
+    display: block;
+    padding: 10px;
+}
+
+
+.header .topMenu .subMenu li a {
+    color: #eceff1;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.header .topMenu .subMenu li a:hover {
+    color: #ffbc0e;
+}
+
+.header .topMenu .subMenu li:hover {
+    background-color: #0c1b2752;
+}
+
+.header .topMenu .subMenu .subMenuCursos  li:hover{
+    background-color: #20486678;
+}
+
+.topMenuMovil{
+    position: absolute;
+    right: 2.3rem;
+    top: 100px;
+    width: 330px;
+    background: #0c1b2773;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.topMenuMovil li{
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.topMenuMovil li a:hover {
+    color: #ffbc0e;
+    
+}
+.topMenuMovil li:hover{
+    background-color: #0c1b2752;
+}
+
+.topMenuMovil a{
+    font-size: 20px;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.topMenuMovil .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.topMenuMovil .btn button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btnTopMenuMovil li:hover{
+    background-color: initial;
+}
+
+.botonActivacionBarra{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+.subMenuMovil, .subMenuMovilC, .subMenuCursos{
+    background-color: #0c1b27d2 ;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+.subMenuCursos{
+    background-color: #4395b9;
+}
+.subMenuMovilC{
+    background-color: #42778e;
+}
+.subMenuMovil a, .subMenuMovilC a{
+    font-size: 17px;
+}
+.subMenuMovil li:hover{
+    background-color: initial;
+}
+
+.subMenuCursos.open{
+    height: auto;
+}
+.subMenuCursos.open li:hover{
+    transform: scale(1);
+}
+/* -------------------------------SECCION TOPBAR--------------------------------  */
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.cartBtn {
+    width: 140px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    background-color: #00AAE2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: .5s;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+  }
+  
+  .cartBtn.close{
+    overflow: hidden;
+  }
+  
+  .iconContainer {
+    position: absolute;
+    left: -50px;
+    width: 50px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: .5s;
+    color: white;
+  }
+  
+  .icon {
+    border-radius: 1px;
+  }
+  
+  .text {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    transition-duration: .5s;
+    font-size: 1.04em;
+    font-weight: 600;
+    gap: 5px;
+  }
+  
+  .cartBtn:hover .iconContainer {
+    transform: translateX(58px);
+    border-radius: 40px;
+    transition-duration: .5s;
+  }
+  
+  .cartBtn:hover .text {
+    transform: translate(10px,0px);
+    transition-duration: .5s;
+  }
+  
+  .cartBtn:active {
+    transform: scale(0.95);
+    transition-duration: .5s;
+  }
+
+
+
+
+  .buttonIrHaciaArriba {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgb(36, 36, 36);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: fixed;
+    right: 25px;
+    bottom: 30px;
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .buttonIrHaciaArriba:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+  }
+  
+  .buttonIrHaciaArriba:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-300%);
+  }
+  
+  .buttonIrHaciaArriba::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Volver hacia arriba";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+  .buttonIrHaciaArriba:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }

@@ -1,0 +1,103 @@
+/* -------------------------------SECCION FOOTER--------------------------------  */
+.footer {
+    background-color: #0c1b27;
+    color: #fff;
+    padding: 20px 0;
+
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content {
+    margin-top: 0.5%;
+}
+
+.footer-logo img {
+    width: 179px;
+    margin-top: 32px;
+    margin-left: 2%;
+    padding: 1%;
+}
+
+.footer-logo.soloEmermax{
+    display: none;
+}
+.footer-logo.abajoEmermax{
+    display: none;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.footer-social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    padding: 0% 34px;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.barra-icon {
+    width: 610px;
+    height: 1px;
+    margin-bottom: 7px;
+    background-color: #ffffff;
+}
+
+#LogoAces {
+    width: 5.5%;
+    padding: unset;
+}
+
+#LogoNorma2728 {
+    width: 5.2%;
+    padding: unset;
+}
+
+#LogoCOTCCC {
+    width: 5%;
+    padding: unset;
+}
+
+#LogoAider {
+    width: 5.5%;
+    margin-right: 5%;
+    padding: unset;
+}
+
+
+
+
+/* -------------------------------SECCION FOOTER--------------------------------  */

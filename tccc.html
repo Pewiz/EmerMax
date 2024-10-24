@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EmerMax - Curso TECC</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="icon" type="image/png" href="recursos/iconoSolo.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="recursos/iconoSolo.webp">
+  <link rel="stylesheet" href="/style/topbar.css">
+  <link rel="stylesheet" href="/style/cursos.css">
+  <link rel="stylesheet" href="/style/footer.css">
+  <link rel="stylesheet" href="/style/mediaQuery.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
@@ -23,74 +26,74 @@
   <header class="header">
 
     <div class="logo">
-        <a href="index.html"><img src="recursos/IconoBlanco.png" alt="Logo de la pagina"></a>
+        <a href="index.html"><img src="recursos/IconoBlanco.webp" alt="Logo de la pagina"></a>
     </div>
     <nav>
-        <ul class="topMenu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Capacitaciones</a>
-                <ul class="subMenu">
-                    <li class="cursos1Top"><a href="#">Emergencias médicas</a>
-                        <ul class="subMenuCursos tcursos1">
-                            <li><a href="rcp.html">Reanimación cardiopulmonar básica (RCP)</a></li>
-                            <li><a href="tccc.html">Tactical Emergency Casualty Care (TECC)</a></li>
-                            <li><a href="era.html">Manejo de la vía aérea (MVA)</a></li>
-                            <li><a href="iaas.html">Soporte Vital Cardiovascular Avanzado (SVCA) </a></li>
-                            <li><a href="esi.html">Stop The Bleed</a></li>
-                        </ul>
-                    </li>
-                    <li class="cursos2Top"><a href="#">Otros Cursos</a>
-                        <ul class="subMenuCursos tcursos2">
-                            <li><a href="cbe.html">Conformación de brigada de emergencia</a></li>
-                            <li><a href="ecg.html">Operador de Grúa Horquilla</a></li>
-                        </ul>
-                    </li>
-                </ul>
+      <ul class="topMenu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Capacitaciones</a>
+            <ul class="subMenu">
+                <li class="cursos1Top"><a href="#">Emergencias médicas</a>
+                    <ul class="subMenuCursos tcursos1">
+                        <li><a href="rcp.html">Reanimación cardiopulmonar básica (RCP)</a></li>
+                        <li><a href="tccc.html">Tactical Emergency Casualty Care (TECC)</a></li>
+                        <li><a href="era.html">Manejo de la vía aérea (MVA)</a></li>
+                        <li><a href="iaas.html">Soporte Vital Cardiovascular Avanzado (SVCA) </a></li>
+                        <li><a href="esi.html">Stop The Bleed</a></li>
+                    </ul>
+                </li>
+                <li class="cursos2Top"><a href="#">Otros Cursos</a>
+                    <ul class="subMenuCursos tcursos2">
+                        <li><a href="cbe.html">Conformación de brigada de emergencia</a></li>
+                        <li><a href="ecg.html">Operador de Grúa Horquilla</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-            </li>
-            <li><a href="#">Equipamiento</a>
-                <ul class="subMenu">
-                    <li><a href="#">Equipo Medico</a></li>
-                    <li><a href="#">Equipo Tactico</a></li>
-                </ul>
+        </li>
+        <li><a href="#">Equipamiento</a>
+            <ul class="subMenu">
+                <li><a href="equipoMedico.html">Equipo Medico</a></li>
+                <li><a href="equipoTactico.html">Equipo Tactico</a></li>
+            </ul>
 
-            </li>
+        </li>
 
-        </ul>
+    </ul>
 
-        <ul class="topMenuMovil" >
-            <li ><a href="index.html">Inicio</a></li>
-            <li class="capacitaciones"><a href="#">Capacitaciones</a> 
-                <ul class="subMenuMovil capacitaciones">
-                    <li class="cursos1"><a href="#">Emergencias médicas</a>
-                        <ul class="subMenuMovilC capacitaciones cursos1">
-                            <li><a href="rcp.html">Reanimación cardiopulmonar básica (RCP)</a></li>
-                            <li><a href="tccc.html">Tactical Emergency Casualty Care (TECC)</a></li>
-                            <li><a href="era.html">Manejo de la vía aérea (MVA)</a></li>
-                            <li><a href="iaas.html">Soporte Vital Cardiovascular Avanzado (SVCA) </a></li>
-                            <li><a href="esi.html">Stop The Bleed</a></li>
+    <ul class="topMenuMovil" >
+        <li ><a href="index.html">Inicio</a></li>
+        <li class="capacitaciones"><a href="#">Capacitaciones</a> 
+            <ul class="subMenuMovil capacitaciones">
+                <li class="cursos1"><a href="#">Emergencias médicas</a>
+                    <ul class="subMenuMovilC capacitaciones cursos1">
+                        <li><a href="rcp.html">Reanimación cardiopulmonar básica (RCP)</a></li>
+                        <li><a href="tccc.html">Tactical Emergency Casualty Care (TECC)</a></li>
+                        <li><a href="era.html">Manejo de la vía aérea (MVA)</a></li>
+                        <li><a href="iaas.html">Soporte Vital Cardiovascular Avanzado (SVCA) </a></li>
+                        <li><a href="esi.html">Stop The Bleed</a></li>
 
-                        </ul>
-                    </li>
-                    <li class="cursos2"><a href="#">Otros Cursos</a>
-                        <ul class="subMenuMovilC capacitaciones cursos2">
-                            <li><a href="cbe.html">Conformación de brigada de emergencia</a></li>
-                            <li><a href="ecg.html">Operador de Grúa Horquilla</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            
-            </li>
-            <li class="equipamiento"><a href="#">Equipamiento</a>
-                <ul class="subMenuMovil equipamiento ">
-                    <li><a href="#">Equipo Medico</a></li>
-                    <li><a href="#">Equipo Tactico</a></li>
-                </ul>
-            </li>
-            <div class="btnTopMenuMovil">
-            <li><a class="btn" href="https://wa.link/7mw6ew" target="_blank" rel="noreferrer"><button>Contacto</button></a></li>
-            </div>
-        </ul> 
+                    </ul>
+                </li>
+                <li class="cursos2"><a href="#">Otros Cursos</a>
+                    <ul class="subMenuMovilC capacitaciones cursos2">
+                        <li><a href="cbe.html">Conformación de brigada de emergencia</a></li>
+                        <li><a href="ecg.html">Operador de Grúa Horquilla</a></li>
+                    </ul>
+                </li>
+            </ul>
+        
+        </li>
+        <li class="equipamiento"><a href="#">Equipamiento</a>
+            <ul class="subMenuMovil equipamiento ">
+                <li><a href="equipoMedico.html">Equipo Medico</a></li>
+                <li><a href="equipoTactico.html">Equipo Tactico</a></li>
+            </ul>
+        </li>
+        <div class="btnTopMenuMovil">
+        <li><a class="btn" href="https://wa.link/7mw6ew" target="_blank" rel="noreferrer"><button>Contacto</button></a></li>
+        </div>
+    </ul> 
 
     </nav>
     <a class="btn" href="https://wa.link/7mw6ew" target="_blank"
@@ -109,19 +112,19 @@
       <div class="foto-producto">
         <div class="slider-producto" id="slider">
           <section class="slider-section-producto">
-            <img src="recursos/TECC/TECC1.jpeg" alt="">
+            <img src="recursos/TECC/TECC1.webp" alt="">
           </section>
           <section class="slider-section-producto">
-            <img src="recursos/TECC/TECC2.jpg" alt="">
+            <img src="recursos/TECC/TECC2.webp" alt="">
           </section>
           <section class="slider-section-producto">
-            <img src="recursos/TECC/TECC3.jpeg" alt="">
+            <img src="recursos/TECC/TECC3.webp" alt="">
           </section>
           <section class="slider-section-producto">
-            <img src="recursos/TECC/TECC4.jpg" alt="">
+            <img src="recursos/TECC/TECC4.webp" alt="">
           </section>
           <section class="slider-section-producto">
-            <img src="recursos/TECC/TECC1.jpeg" alt="">
+            <img src="recursos/TECC/TECC1.webp" alt="">
           </section>
         </div>
         <div class="btn-left" id="btn-left-producto"><i class='bx bx-chevron-left'></i></div>
@@ -140,7 +143,7 @@
 
         <p id="certificacion">
           <!--<strong>Certificación: </strong>
-          <img src="recursos/Norma-2728.png" alt="">-->
+          <img src="recursos/Norma-2728.webp" alt="">-->
         </p>
 
         <a href="https://wa.link/b4nfq4" target="_blank"><button class="btnComprar">Comprar <i class="fab fa-whatsapp fa-lg"></i> </button></a>
@@ -214,55 +217,55 @@
       <div class="slider-clientes">
         <div class="slide-track-clientes">
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente1.png" alt="ClienteQuellón">
+            <img src="recursos/Clientes/cliente1.webp" alt="ClienteQuellón">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente2.png" alt="ClienteCaletaAnahuac">
+            <img src="recursos/Clientes/cliente2.webp" alt="ClienteCaletaAnahuac">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente3.png" alt="ClienteHotelVicenteCostanera">
+            <img src="recursos/Clientes/cliente3.webp" alt="ClienteHotelVicenteCostanera">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente4.png" alt="ClienteQuellón">
+            <img src="recursos/Clientes/cliente4.webp" alt="ClienteQuellón">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente5.png" alt="ClienteQuellón">
+            <img src="recursos/Clientes/cliente5.webp" alt="ClienteQuellón">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente1.png" alt="ClienteCaletaAnahuac">
+            <img src="recursos/Clientes/cliente1.webp" alt="ClienteCaletaAnahuac">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente2.png" alt="ClienteHotelVicenteCostanera">
+            <img src="recursos/Clientes/cliente2.webp" alt="ClienteHotelVicenteCostanera">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente3.png" alt="ClienteQuellón">
+            <img src="recursos/Clientes/cliente3.webp" alt="ClienteQuellón">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente4.png" alt="ClienteHotelVicenteCostanera">
+            <img src="recursos/Clientes/cliente4.webp" alt="ClienteHotelVicenteCostanera">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente5.png" alt="ClienteQuellón">
+            <img src="recursos/Clientes/cliente5.webp" alt="ClienteQuellón">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente1.png" alt="ClienteCaletaAnahuac">
+            <img src="recursos/Clientes/cliente1.webp" alt="ClienteCaletaAnahuac">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente2.png" alt="ClienteHotelVicenteCostanera">
+            <img src="recursos/Clientes/cliente2.webp" alt="ClienteHotelVicenteCostanera">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente3.png" alt="ClienteQuellón">
+            <img src="recursos/Clientes/cliente3.webp" alt="ClienteQuellón">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente4.png" alt="ClienteCaletaAnahuac">
+            <img src="recursos/Clientes/cliente4.webp" alt="ClienteCaletaAnahuac">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente5.png" alt="ClienteQuellón">
+            <img src="recursos/Clientes/cliente5.webp" alt="ClienteQuellón">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente1.png" alt="ClienteHotelVicenteCostanera">
+            <img src="recursos/Clientes/cliente1.webp" alt="ClienteHotelVicenteCostanera">
           </div>
           <div class="slide-clientes">
-            <img src="recursos/Clientes/cliente2.png" alt="ClienteQuellón">
+            <img src="recursos/Clientes/cliente2.webp" alt="ClienteQuellón">
           </div>
         </div>
       </div>
@@ -291,20 +294,20 @@
                 </ul>
             </div>
             <div class="footer-logo">
-                <img id="LogoAces" src="recursos/Aces.png" alt="LogoAces">
-                <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.png" alt="logoEnfermerosMilitares">
-                <img src="recursos/iconLetra.png" alt="LogoEmerMaxLetra">
-                <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.png" alt="LogoCOTCCC">
-                <img id="LogoAider" src="recursos/Aider.png" alt="LogoAider">
+                <img id="LogoAces" src="recursos/Aces.webp" alt="LogoAces">
+                <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.webp" alt="logoEnfermerosMilitares">
+                <img src="recursos/iconLetra.webp" alt="LogoEmerMaxLetra">
+                <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.webp" alt="LogoCOTCCC">
+                <img id="LogoAider" src="recursos/Aider.webp" alt="LogoAider">
             </div>
             <div class="footer-logo soloEmermax">
-                <img src="recursos/iconLetra.png" alt="LogoEmerMaxLetra">
+                <img src="recursos/iconLetra.webp" alt="LogoEmerMaxLetra">
             </div>
             <div class="footer-logo abajoEmermax">
-                <img id="LogoAces" src="recursos/Aces.png" alt="LogoAces">
-                <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.png" alt="logoEnfermerosMilitares">
-                <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.png" alt="LogoCOTCCC">
-                <img id="LogoAider" src="recursos/Aider.png" alt="LogoAider">
+                <img id="LogoAces" src="recursos/Aces.webp" alt="LogoAces">
+                <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.webp" alt="logoEnfermerosMilitares">
+                <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.webp" alt="LogoCOTCCC">
+                <img id="LogoAider" src="recursos/Aider.webp" alt="LogoAider">
             </div>
         </div>
         <div class="footer-copy">
@@ -312,7 +315,7 @@
         </div>
     </div>
 </footer>
-  <script src="javascript.js"></script>
+  <script src="/logic/javascript.js"></script>
 </body>
 
 </html>

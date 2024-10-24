@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EmerMax - Curso TCCC / TECC</title>
+  <title>EmerMax - Equipo Tactico</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="icon" type="image/png" href="recursos/iconoSolo.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="recursos/iconoSolo.webp">
+  <link rel="stylesheet" href="/style/topbar.css">
+  <link rel="stylesheet" href="/style/productosYCarrito.css">
+  <link rel="stylesheet" href="/style/footer.css">
+  <link rel="stylesheet" href="/style/mediaQuery.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
@@ -23,235 +26,168 @@
   <header class="header">
 
     <div class="logo">
-      <a href="index.html"><img src="recursos/IconoBlanco.png" alt="Logo de la pagina"></a>
+        <a href="index.html"><img src="recursos/IconoBlanco.webp" alt="Logo de la pagina"></a>
     </div>
     <nav>
       <ul class="topMenu">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="#">Capacitaciones</a>
-          <ul class="subMenu">
-            <li><a href="rcp.html">Reanimación cardiopulmonar básica (RCP)</a></li>
-            <li><a href="tccc.html">Combat Casualty Care (TCCC) / Tactical Emergency Casualty Care (TECC)</a></li>
-            <li><a href="cbe.html">Conformación de brigada de emergencia</a></li>
-            <li><a href="era.html">Técnicas de uso y manejo de equipo de respiración autonoma (ERA)</a></li>
-            <li><a href="iaas.html">Infecciones asociadas a la atención en salud (IAAS)</a></li>
-            <li><a href="ecg.html">Electrocardiograma (ECG)</a></li>
-            <li><a href="esi.html">Emergency Severity Index (ESI)</a></li>
-          </ul>
+            <ul class="subMenu">
+                <li class="cursos1Top"><a href="#">Emergencias médicas</a>
+                    <ul class="subMenuCursos tcursos1">
+                        <li><a href="rcp.html">Reanimación cardiopulmonar básica (RCP)</a></li>
+                        <li><a href="tccc.html">Tactical Emergency Casualty Care (TECC)</a></li>
+                        <li><a href="era.html">Manejo de la vía aérea (MVA)</a></li>
+                        <li><a href="iaas.html">Soporte Vital Cardiovascular Avanzado (SVCA) </a></li>
+                        <li><a href="esi.html">Stop The Bleed</a></li>
+                    </ul>
+                </li>
+                <li class="cursos2Top"><a href="#">Otros Cursos</a>
+                    <ul class="subMenuCursos tcursos2">
+                        <li><a href="cbe.html">Conformación de brigada de emergencia</a></li>
+                        <li><a href="ecg.html">Operador de Grúa Horquilla</a></li>
+                    </ul>
+                </li>
+            </ul>
 
         </li>
         <li><a href="#">Equipamiento</a>
-          <ul class="subMenu">
-            <li><a href="equipoMedico.html">Equipo Medico</a></li>
-            <li><a href="equipoTactico.html">Equipo Tactico</a></li>
-          </ul>
+            <ul class="subMenu">
+                <li><a href="equipoMedico.html">Equipo Medico</a></li>
+                <li><a href="equipoTactico.html">Equipo Tactico</a></li>
+            </ul>
 
         </li>
 
-      </ul>
+    </ul>
+
+    <ul class="topMenuMovil" >
+        <li ><a href="index.html">Inicio</a></li>
+        <li class="capacitaciones"><a href="#">Capacitaciones</a> 
+            <ul class="subMenuMovil capacitaciones">
+                <li class="cursos1"><a href="#">Emergencias médicas</a>
+                    <ul class="subMenuMovilC capacitaciones cursos1">
+                        <li><a href="rcp.html">Reanimación cardiopulmonar básica (RCP)</a></li>
+                        <li><a href="tccc.html">Tactical Emergency Casualty Care (TECC)</a></li>
+                        <li><a href="era.html">Manejo de la vía aérea (MVA)</a></li>
+                        <li><a href="iaas.html">Soporte Vital Cardiovascular Avanzado (SVCA) </a></li>
+                        <li><a href="esi.html">Stop The Bleed</a></li>
+
+                    </ul>
+                </li>
+                <li class="cursos2"><a href="#">Otros Cursos</a>
+                    <ul class="subMenuMovilC capacitaciones cursos2">
+                        <li><a href="cbe.html">Conformación de brigada de emergencia</a></li>
+                        <li><a href="ecg.html">Operador de Grúa Horquilla</a></li>
+                    </ul>
+                </li>
+            </ul>
+        
+        </li>
+        <li class="equipamiento"><a href="#">Equipamiento</a>
+            <ul class="subMenuMovil equipamiento ">
+                <li><a href="equipoMedico.html">Equipo Medico</a></li>
+                <li><a href="equipoTactico.html">Equipo Tactico</a></li>
+            </ul>
+        </li>
+        <div class="btnTopMenuMovil">
+        <li><a class="btn" href="https://wa.link/7mw6ew" target="_blank" rel="noreferrer"><button>Contacto</button></a></li>
+        </div>
+    </ul> 
+
     </nav>
-    <a class="btn" href="contacto.html"><button>Contacto</button></a>
+    <a class="btn" href="https://wa.link/7mw6ew" target="_blank"
+        rel="noreferrer"><button>Contacto</button></a>
+    <div class="botonActivacionBarra">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="bloqueoContenidoMain"></div>
+    <button class="cartBtn">
+      <span class="iconContainer">Carrito</span>
+      <p class="text"></p>
+    </button>
+    <button class="buttonIrHaciaArriba">
+        <i class="fa-solid fa-arrow-up svgIcon" style="color: #ffffff;"></i>
+    </button>
+
+
   </header>
   
 
   <main>
-    <div class="container-productos">
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
+      <div class="bannerRhino"><img src="recursos/rhinoBanner.webp" alt=""></div>
+      <div class="bannerRhinoProduct"><img src="recursos/rhinoBannerProducts.webp" alt="Banner de productos Rhino"></div>
+      <div class="envioGratis"><i class="fa-solid fa-truck" style="color: #ffffff"></i> Envio GRATIS por compras +$100.000</div>
+      <div class="titleTienda"><h1 >Equipamiento Tactico</h1></div>
+    <div class="container-productos" id="product-list"></div>
+    <div id="product-list"></div>
+    <section class="carrito">
+      <div class="carrito-top">
+        <p>🛒 Tu carrito (4)</p>
+        <button class="closeCarrito">
+          <span class="X"></span>
+          <span class="Y"></span>
+        </button>
       </div>
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
-      </div>
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
-      </div>
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
-      </div>
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
-      </div>
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
-      </div>
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
-      </div>
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
-      </div>
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
-      </div>
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
-      </div>
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
-      </div>
-      <div class="card-productos">
-        <div class="card-productos-img"><img 
-        class="img" src="https://ae-pic-a1.aliexpress-media.com/kf/Sb8724fd5db1442a591d95a072fece1d3D/Rhino-Rescue-Kit-de-primeros-auxilios-Molle-IFAK-bolsa-para-acampar-al-aire-libre-Kit-de.jpg_.webp" alt=""></div>
-        <div class="card-productos-title">Kit de primeros auxilios</div>
-        <div class="card-productos-subtitle">Rhino Rescue-Kit de primeros auxilios Molle IFAK, bolsa para acampar al aire libre, Kit de senderismo</div>
-        <hr class="card-productos-divider">
-        <div class="card-productos-footer">
-            <div class="card-productos-price"><span>$</span> 14.000</div>
-            <button class="card-productos-btn">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </button>
-        </div>
-      </div>
-    </div>
-    
 
+      <div class="carrito-productos"></div>
+      <p class="empty-message" style="display: none;">Carrito vacío</p>
+
+    </section>
   </main>
 
 
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
+        <div class="footer-content">
 
-        <div class="footer-social">
-          <ul>
-            <li class="barra-icon"></li>
-            <li><a href="https://web.facebook.com/profile.php?id=61555668171067&locale=es_LA" target="_blank"
-                rel="noreferrer">
-                <i class="fab fa-facebook-f fa-lg"></i>
-              </a>
-            </li>
-            <li><a href="https://www.instagram.com/emermax.training" target="_blank" rel="noreferrer"><i
-                  class="fab fa-instagram fa-lg"></i></a></li>
-            <li><a href="#"><i class="fab fa-whatsapp fa-lg"></i></a></li>
-            <li class="barra-icon"></li>
-          </ul>
+            <div class="footer-social">
+                <ul>
+                    <li class="barra-icon"></li>
+                    <li><a href="https://web.facebook.com/profile.php?id=61555668171067&locale=es_LA"
+                            target="_blank" rel="noreferrer">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/emermax.training" target="_blank" rel="noreferrer"><i
+                                class="fab fa-instagram fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp fa-lg"></i></a></li>
+                    <li class="barra-icon"></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img id="LogoAces" src="recursos/Aces.webp" alt="LogoAces">
+                <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.webp" alt="logoEnfermerosMilitares">
+                <img src="recursos/iconLetra.webp" alt="LogoEmerMaxLetra">
+                <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.webp" alt="LogoCOTCCC">
+                <img id="LogoAider" src="recursos/Aider.webp" alt="LogoAider">
+            </div>
+            <div class="footer-logo soloEmermax">
+                <img src="recursos/iconLetra.webp" alt="LogoEmerMaxLetra">
+            </div>
+            <div class="footer-logo abajoEmermax">
+                <img id="LogoAces" src="recursos/Aces.webp" alt="LogoAces">
+                <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.webp" alt="logoEnfermerosMilitares">
+                <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.webp" alt="LogoCOTCCC">
+                <img id="LogoAider" src="recursos/Aider.webp" alt="LogoAider">
+            </div>
         </div>
-        <div class="footer-logo">
-          <img id="LogoAces" src="recursos/Aces.png" alt="LogoAces">
-          <img id="LogoNorma2728" src="recursos/Norma-2728.png" alt="LogoNorma2728">
-          <img src="recursos/iconLetra.png" alt="LogoEmerMaxLetra">
-          <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.png" alt="LogoCOTCCC">
-          <img id="LogoAider" src="recursos/Aider.png" alt="LogoAider">
+        <div class="footer-copy">
+            <p>&copy; 2024 EmerMax. Todos los derechos reservados.</p>
         </div>
-      </div>
-      <div class="footer-copy">
-        <p>&copy; 2024 EmerMax. Todos los derechos reservados.</p>
-      </div>
     </div>
-  </footer>
+</footer>
 
-  <script src="javascript.js"></script>
+  <script src="/logic/javascript.js"></script>
+  <script src="/logic/tienda.js"></script>
+  <script type="module">
+    import { displayFeaturedProducts } from '/logic/tienda.js';
+
+    // Llamar a la función para obtener los productos cuando cargue la página
+    displayFeaturedProducts();
+  </script>
+
 </body>
 
 </html>

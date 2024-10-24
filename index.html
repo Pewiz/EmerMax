@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EmerMax</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" type="image/png" href="recursos/iconoSolo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="recursos/iconoSolo.webp">
+    <link rel="stylesheet" href="/style/topbar.css">
+    <link rel="stylesheet" href="/style/pagMain.css">
+    <link rel="stylesheet" href="/style/odometro.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/mediaQuery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
@@ -31,7 +35,7 @@
     <header class="header">
 
         <div class="logo">
-            <a href="index.html"><img src="recursos/IconoBlanco.png" alt="Logo de la pagina"></a>
+            <a href="index.html"><img src="recursos/IconoBlanco.webp" alt="Logo de la pagina"></a>
         </div>
         <nav>
             <ul class="topMenu">
@@ -58,8 +62,8 @@
                 </li>
                 <li><a href="#">Equipamiento</a>
                     <ul class="subMenu">
-                        <li><a href="#">Equipo Medico</a></li>
-                        <li><a href="#">Equipo Tactico</a></li>
+                        <li><a href="equipoMedico.html">Equipo Medico</a></li>
+                        <li><a href="equipoTactico.html">Equipo Tactico</a></li>
                     </ul>
 
                 </li>
@@ -91,8 +95,8 @@
                 </li>
                 <li class="equipamiento"><a href="#">Equipamiento</a>
                     <ul class="subMenuMovil equipamiento ">
-                        <li><a href="#">Equipo Medico</a></li>
-                        <li><a href="#">Equipo Tactico</a></li>
+                        <li><a href="equipoMedico.html">Equipo Medico</a></li>
+                        <li><a href="equipoTactico.html">Equipo Tactico</a></li>
                     </ul>
                 </li>
                 <div class="btnTopMenuMovil">
@@ -108,7 +112,9 @@
             <i class="fa-solid fa-bars"></i>
         </div>
 
-
+        <button class="buttonIrHaciaArriba">
+            <i class="fa-solid fa-arrow-up svgIcon" style="color: #ffffff;"></i>
+        </button>
 
     </header>
 
@@ -116,7 +122,7 @@
         <section class="container-carousel">
             <div class="carruseles" id="slider">
                 <section class="slider-section">
-                    <img src="recursos/banner1.jpeg">
+                    <img src="recursos/banner1.webp">
                     <div class="carousel-caption">
                         <h2>STOP THE BLEED</h2>
                         <p>Curso donde podrás identificar y reconocer el tipo de hemorragia potencialmente mortales para
@@ -124,7 +130,7 @@
                     </div>
                 </section>
                 <section class="slider-section">
-                    <img src="recursos/TECC_Banner.jpg">
+                    <img src="recursos/TECC_Banner.webp">
                     <div class="carousel-caption">
                         <h2>TECC</h2>
                         <p>Atención táctica a víctimas de combate, introduce técnicas basadas en evidencia para salvar
@@ -133,7 +139,7 @@
                     </div>
                 </section>
                 <section class="slider-section">
-                    <img src="recursos/MVA2.jpg">
+                    <img src="recursos/MVA2.webp">
                     <div class=" carousel-caption">
                         <h2>Manejo de la vía aérea (MVA) </h2>
                         <p>El manejo de la vía aérea en pacientes críticos representa uno de los mayores desafios para
@@ -143,7 +149,7 @@
                     </div>
                 </section>
                 <section class="slider-section">
-                    <img src="recursos/banner4.jpeg">
+                    <img src="recursos/banner4.webp">
                     <div class="carousel-caption">
                         <h2>Primeros Auxilios</h2>
                         <p>En este curso de primeros auxilios aprenderás cómo evaluar adecuadamente en situación de
@@ -154,7 +160,7 @@
                     </div>
                 </section>
                 <section class="slider-section">
-                    <img src="recursos/RCP.jpg">
+                    <img src="recursos/RCP.webp">
                     <div class="carousel-caption">
                         <h2>Reanimación cardiopulmonar básica (RCP)</h2>
                         <p>Aprende las técnicas esenciales de reanimación cardiopulmonar básica (RCP) para salvar vidas
@@ -177,21 +183,20 @@
                 </div>
                 <div class="animate__animated animate__fadeInRight" id="cajaDerecha">
                     <div class="elementoDerecha">
-                        <p>
-                            <a href="#servicios">Capacitaciones</a>
-                            –
-                            <a href="#">Equipo Médico</a>
-                            –
-                            <a href="#">Equipo Táctico</a>
-                        </p>
+                        <i>+</i>
+                        <div id="odometer" class="odometer">0</div> <!-- Aca ya lo tengo implementado -->
+                        <i class="fa-solid fa-user-graduate" style="color: #ffffff;"></i>
+                        <p>¡Alumnos Capacitados!</p>
+
                     </div>
                 </div>
                 <div class="animate__animated animate__fadeInRight" id="cajaDerecha cajaDerechaMovil" >
                     <div class="elementoDerecha cajaDerechaMovil">
                         <p>
-                            <a href="#servicios">~ Capacitaciones</a>
-                            <a href="#">~ Equipo Médico</a>
-                            <a href="#">~ Equipo Táctico</a>
+                            
+                            <!-- Aqui lo quiero implementar -->
+                            <i class="fa-solid fa-user-graduate" style="color: #ffffff;"></i>
+                            <p>¡Alumnos Capacitados!</p>
                         </p>
                     </div>
                 </div>
@@ -261,7 +266,7 @@
                 <div class="columna">
                     <div class="animate__animated animate__fadeInUpBig ">
                         <div class="imgServicio">
-                            <img src="recursos/SeccionServicio1.png" alt="Servicio de TCCC/TECC">
+                            <img src="recursos/SeccionServicio1a.webp" alt="Servicio de TCCC/TECC">
                         </div>
                     </div>
 
@@ -297,7 +302,7 @@
 
                     <div class="animate__animated animate__fadeInUpBig ">
                         <div class="imgServicio">
-                            <img src="recursos/BrigadaEmer.jpg" alt="">
+                            <img src="recursos/BrigadaEmer.webp" alt="">
                         </div>
                     </div>
 
@@ -308,7 +313,7 @@
                 <div class="columna">
                     <div class="animate__animated animate__fadeInUpBig">
                         <div class="imgServicio">
-                            <img src="recursos/SeccionServicios2.png" alt="">
+                            <img src="recursos/SeccionServicios2.webp" alt="">
                         </div>
                     </div>
 
@@ -343,7 +348,7 @@
 
                     <div class="animate__animated animate__fadeInUpBig">
                         <div class="imgServicio">
-                            <img src="recursos/SectionServicios4.png" alt="">
+                            <img src="recursos/SectionServicios4.webp" alt="">
                         </div>
                     </div>
 
@@ -359,12 +364,12 @@
                     <h1>TAC-MED INSUMOS EMRX SPA</h1>
                     <ul>
                         <li style="--accent-color:#0B374D">
-                            <div class="icon"><img src="recursos/RhinoLogo.png" alt="RhinoRescueLogo"></div>
+                            <div class="icon"><img src="recursos/RhinoLogo.webp" alt="RhinoRescueLogo"></div>
                             <div class="title">Rhino Rescue</div>
                             <div class="descr">Distribuidor oficial de Rhino Rescue</div>
                         </li>
                         <li style="--accent-color:#1286A8">
-                            <div class="icon"><img src="recursos/LogoColorSolo.png" alt=""></div>
+                            <div class="icon"><img src="recursos/LogoColorSolo.webp" alt=""></div>
                             <div class="title">EmerMax Insumos</div>
                             <div class="descr">Insumos médicos de la mejor calidad y con precios increbles</div>
                         </li>
@@ -393,12 +398,12 @@
                     <h1>TAC-MED INSUMOS EMRX SPA</h1>
                     <ul>
                         <li style="--accent-color:#0B374D">
-                            <div class="icon"><img src="recursos/RhinoLogo.png" alt="RhinoRescueLogo"></div>
+                            <div class="icon"><img src="recursos/RhinoLogo.webp" alt="RhinoRescueLogo"></div>
                             <div class="title">Rhino Rescue</div>
                             <div class="descr">Distribuidor oficial de Rhino Rescue</div>
                         </li>
                         <li style="--accent-color:#1286A8">
-                            <div class="icon"><img src="recursos/LogoColorSolo.png" alt=""></div>
+                            <div class="icon"><img src="recursos/LogoColorSolo.webp" alt=""></div>
                             <div class="title">EmerMax Insumos</div>
                             <div class="descr">Insumos médicos de la mejor calidad y con precios increbles</div>
                         </li>
@@ -448,20 +453,20 @@
                     </ul>
                 </div>
                 <div class="footer-logo">
-                    <img id="LogoAces" src="recursos/Aces.png" alt="LogoAces">
-                    <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.png" alt="logoEnfermerosMilitares">
-                    <img src="recursos/iconLetra.png" alt="LogoEmerMaxLetra">
-                    <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.png" alt="LogoCOTCCC">
-                    <img id="LogoAider" src="recursos/Aider.png" alt="LogoAider">
+                    <img id="LogoAces" src="recursos/Aces.webp" alt="LogoAces">
+                    <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.webp" alt="logoEnfermerosMilitares">
+                    <img src="recursos/iconLetra.webp" alt="LogoEmerMaxLetra">
+                    <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.webp" alt="LogoCOTCCC">
+                    <img id="LogoAider" src="recursos/Aider.webp" alt="LogoAider">
                 </div>
                 <div class="footer-logo soloEmermax">
-                    <img src="recursos/iconLetra.png" alt="LogoEmerMaxLetra">
+                    <img src="recursos/iconLetra.webp" alt="LogoEmerMaxLetra">
                 </div>
                 <div class="footer-logo abajoEmermax">
-                    <img id="LogoAces" src="recursos/Aces.png" alt="LogoAces">
-                    <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.png" alt="logoEnfermerosMilitares">
-                    <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.png" alt="LogoCOTCCC">
-                    <img id="LogoAider" src="recursos/Aider.png" alt="LogoAider">
+                    <img id="LogoAces" src="recursos/Aces.webp" alt="LogoAces">
+                    <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.webp" alt="logoEnfermerosMilitares">
+                    <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.webp" alt="LogoCOTCCC">
+                    <img id="LogoAider" src="recursos/Aider.webp" alt="LogoAider">
                 </div>
             </div>
             <div class="footer-copy">
@@ -470,7 +475,9 @@
         </div>
     </footer>
 
-    <script src="javascript.js"></script>
+    <script src="/logic/javascript.js"></script>
+    <script src="/logic/odometro.js"></script>
+
 
 </body>
 

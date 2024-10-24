@@ -1,0 +1,225 @@
+
+.slider-section-producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.slider-section-producto
+
+/*slider-section*/
+    {
+    width: calc(100% / 5);
+    height: 100%;
+}
+
+.foto-producto
+
+/*container-carousel*/
+    {
+    position: relative;
+    width: 450px;
+    height: 500px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+
+    overflow: hidden;
+}
+
+.slider-producto
+
+/*carruseles*/
+    {
+    width: 500%;
+    height: 100%;
+    display: flex;
+
+}
+
+#producto {
+    display: flex;
+    justify-content: center;
+    margin: 8% 0 5% 0;
+}
+
+#btn-left-producto,
+#btn-right-producto {
+    font-size: 2rem;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 3.0rem;
+    background-color: rgba(32, 32, 32, 0.699);
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #c7c7c7de;
+    transform: translate(0, -50%);
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+.descripcionProducto {
+    width: 30%;
+    margin-left: 2%;
+}
+
+.descripcionProducto h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.descripcionProducto h5 {
+    margin-top: 3%;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.descripcionProducto p {
+    margin-top: 8%;
+    line-height: 1.6;
+}
+
+#certificacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#certificacion img {
+    width: 16%;
+    margin-left: 2%;
+}
+
+.btnComprar {
+    margin-top: 10%;
+    background-color: #00E676;
+    font-size: 20px;
+    padding: 1%;
+    color: white;
+    border-color: #00E676;
+}
+
+.btnComprar:hover {
+    cursor: pointer;
+}
+
+#descripcionCurso {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+#descripcionCurso header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#descripcionCurso header h3 {
+    margin: 0 1%;
+    text-transform: uppercase;
+}
+
+#descripcionCurso h4 {
+    margin: 1% 0 1% 0;
+    text-transform: uppercase;
+}
+
+.barra-descripcion {
+    width: 100%;
+    height: 2px;
+    margin-bottom: 7px;
+    background-color: #747474;
+}
+
+.liDescripcion {
+    margin: 20px 0px;
+}
+
+.liDescripcion p {
+    margin-left: 2%;
+}
+
+ul,
+li {
+    list-style-type: none;
+
+}
+
+.ulContenido li {
+    list-style: square inside;
+    margin-left: 2%;
+}
+
+
+
+
+
+
+.slider-clientes {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-clientes .slide-track-clientes {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider-clientes .slide-clientes {
+    width: 200px;
+}
+
+.slider-clientes .slide-clientes img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+
+#nuestrosClientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12% 0 2% 0;
+}
+
+#nuestrosClientes header {
+    width: 75vw;
+    margin-bottom: 1%;
+}
+

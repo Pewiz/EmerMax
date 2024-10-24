@@ -1,0 +1,1055 @@
+/*-----------------------------------------------Responsive pagina principal anchos intermedios -----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+@media (max-width: 1864px){
+    .cuerpoProductos{
+        margin-top: 0%;
+    }
+    .header .topMenu a{
+        padding: 13% 0% 41px 0%;
+    }
+    .header .topMenu li {
+        padding: 0px 36px;
+    }
+    .card-back p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1665px){
+    #servicios2 .imgServicio img{
+        width: 600px;
+    }
+}
+@media (max-width: 1585px){
+    #servicios1 .infoServicio{
+        margin-right: -260px;
+        margin-top: 48px;
+        margin-left: 50px;
+    }
+
+    #servicios2 .infoServicio{
+        width: 84%;
+    }
+}
+@media (max-width: 1499px){
+    .barra-icon{
+        width: 400px;
+    }
+}
+
+
+/*-----------------------------------------------Responsive pagina principal anchos intermedios -----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------Responsive pagina principal 1440-----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1440px){
+
+    /*-------------------------Servicios----------------------*/
+    #servicios1 .imgServicio{
+        margin: 0px 0px 0px -231px;
+    }
+    #servicios1 .infoServicio{
+        margin-top: 45px;
+        margin-right: -221px;
+    }
+    #servicios2 .infoServicio{
+        width: 465px;
+        margin-right: 93px;
+        text-align: left;
+        height: 600px;
+        width: 80%;
+    }
+    #servicios2 .imgServicio img {
+        width: 565px;
+        height: 600px;
+        object-fit: cover;
+        object-position: right center;
+    }
+    #servicios2 .columna{
+        width: 57%;
+    }
+
+    #servicios3 .infoServicio{
+        margin-right: -245px;
+        margin-top: 64px;
+    }
+    #servicios4 .columna{
+        width: 61%;
+    }
+
+    /*-------------------------Servicios----------------------*/
+
+    
+
+    #videoNosotros{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .cuerpoProductos {
+        margin-top: 1%;
+    }
+
+    .equipoTactico{
+        height: inherit;
+    }
+    .equipoMedico{
+        height: inherit;
+    }
+    .equipo video{
+        height: inherit;
+        object-fit: cover;
+        object-position: center;
+    }
+    .barra-icon{
+        width: 460px;
+    }
+}
+
+/*-----------------------------------------------Responsive pagina principal 1440-----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+@media (max-width: 1408px){
+    #servicios2 .imgServicio img{
+        width: 470px;
+    }
+    .cuerpoProductos{
+        display: none;
+    }
+    #servicios1 .infoServicio{
+        margin-right: -227px;
+    }
+    #cuerpoProductosAbajo{
+        display: initial;
+    }
+    #cuerpoProductosAbajo .cuerpoProductos{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1350px){
+    .header .topMenu li{
+        padding: 0px 40px;
+    }
+
+    #servicios1 .imgServicio{
+        margin: 0% 0% 0% -231px;
+    }
+    #servicios1 .imgServicio img{
+        width: 560px;
+    }
+
+    #servicios2 .animate__fadeInRight{
+        width: 64%;
+    }
+    #servicios2 .columna{
+        width: 82%;
+    }
+
+    #servicios3 .imgServicio img{
+        width: 680px;
+        margin-top: 50px;
+    }
+
+    #servicios4 .imgServicio img{
+        width: 470px;
+        margin-top: 0%;
+    }
+    #servicios4 .animate__fadeInRight{
+        width: 57%;
+    }
+    #servicios4 .columna{
+        width: 82%;
+    }
+    .card-back p{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1218px){
+    #servicios2 .animate__fadeInRight{
+        width: 58%;
+    }
+
+    .barra-icon{
+        width: 330px;
+    }
+    #descripcionCurso{
+        width: 70%;
+    }
+
+    .master-container{
+        grid-template-columns: 430px 270px;
+    }
+
+    .card{
+        width: 430px;
+    }
+    .coupons{
+        width: 270px;
+    }
+    .checkout{
+        width: 270px;
+    }
+    .checkout .price{
+        font-size: 17px;
+    }
+}
+@media (max-width: 1164px){
+    #servicios3 .columna{
+        width: 60%;
+    }
+    #servicios3 .infoServicio{
+        margin-right: -110px;
+    }
+    #servicios3 .imgServicio img{
+        width: 560px;
+    }
+
+    #servicios4 .animate__fadeInRight{
+        width: 45%;
+    }
+
+    .equipo{
+        width: 450px;
+        height: 585px;
+    }
+    .card-back p{
+        font-size: 17px;
+    }
+    .card-front{
+        font-size: 25px;
+    } 
+
+}
+@media (max-width:1136px){
+    .header .topMenu li{
+        padding: 0px 30px;
+    }
+    .header .topMenu a{
+        font-size: 22px;
+    }
+    .carousel-caption p{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 1079px){
+    #servicios2 .imgServicio img{
+        width: 420px;
+    }
+} 
+/*-----------------------------------------------Responsive pagina principal 1024-----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1024px){
+    .header .topMenu li{
+        padding: 0px 15px;
+    }
+
+    .carousel-caption p{
+        font-size: 1.4rem;
+    }
+
+    .elementoIzquierda h2{
+        font-size: 21px;
+    }
+    #cajaIzquierda{
+        width: 43%;
+    }
+    #about .columna{
+        width: 86%;
+    }
+    .card-back, .card-front h3{
+        font-size: 27px;
+    }
+
+    #servicios1 .columna{
+        width: 80%;
+    }
+    #servicios1 .imgServicio {
+        margin: 47px 0px 0px -37px;
+    }
+    #servicios1 .imgServicio img{
+        width: 490px;
+    }
+    #servicios1 .infoServicio{
+        margin-right: -55px;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    #servicios2 .imgServicio img{
+        width: 363px;
+        height: 600px;
+        object-fit: cover;
+        object-position: right center;
+    }
+    #servicios2 .columna{
+        width: 79%;
+    }
+
+    #servicios3 .columna{
+        width: 53%;
+    }
+    #servicios3 .imgServicio img{
+        width: 576px;
+        height: 500px;
+        margin-left: -231px;
+        object-fit: contain;
+    }
+    #servicios3 .infoServicio{
+        margin-right: -231px;
+    }
+
+    #servicios4 .columna{
+        width: 80%;
+    }
+    #servicios4 .imgServicio{
+        margin-top: 35px;
+    }
+    #servicios4 .imgServicio img{
+        width: 417px;
+        margin-top: -20%;
+    }
+    #servicios4 .infoServicio{
+        width: auto;
+    }
+
+    
+    #cajasT{
+        justify-content: space-around;
+    }
+    .equipo{
+        width: 470px;
+        height: 600px;
+    }
+
+
+    .overlay-text h3{
+        font-size: 34px;
+    }
+    .overlay-text p{
+        font-size: 15px;
+    }
+
+    .barra-icon{
+        width: 260px;
+    }
+
+    #LogoAces{
+        width: 70px;
+    }
+    #LogoNorma2728{
+        width: 64px;
+    }
+    #LogoCOTCCC{
+        width: 66px;
+    }
+    #LogoAider{
+        width: 73px;
+    }
+    
+}
+
+/*-----------------------------------------------Responsive pagina principal 1024-----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+@media (max-width:1017px){
+    .elementoIzquierda{
+        margin: 0%;
+    }
+}
+@media (max-width:997px){
+    .btn-servicios button{
+        font-size: 16px;
+        width: 110px;
+    }
+    .infoServicio p{
+        font-size: 20px;
+    }
+
+    #servicios1 .imgServicio img{
+        width: 450px;
+    }
+    #servicios1 .infoServicio{
+        margin-right: -58px;
+    }
+
+    #servicios2 .infoServicio{
+        width: 87%;
+    }
+
+    #servicios3 .imgServicio img{
+        width: 520px;
+    }
+    #servicios3 .infoServicio{
+        margin-right: -151px;
+    }
+
+    .equipo{
+        width: 400px;
+        height: 520px;
+    }
+
+
+    .foto-producto{
+        width: 360px;
+        height: 420px;
+    }
+
+    .descripcionProducto {
+        width: 37%;
+        margin-left: 5%;
+    }
+
+    #descripcionCurso{
+        width: 85%;
+    }
+
+}
+
+
+@media (max-width: 949px){
+    #about .columna{
+        width: 100%;
+    }
+    .elementoIzquierda {
+        margin: 0% 0% 0% 8%;
+    }
+    .card-back p{
+        font-size: 15px;
+    }
+
+    .topMenu, .btn{
+        display: none;
+    }
+    .topMenuMovil.open, .subMenuMovil.open, .subMenuMovilC.open{
+        height: auto;
+    }
+    .botonActivacionBarra{
+        display: block;
+    }
+}
+
+
+@media (max-width: 902px){
+    .header .topMenu li{
+        padding: 0px 20px;
+    }
+
+    #descripcionCurso {
+        width: 80%
+    }
+
+}
+
+@media (max-width: 859px){
+    .equipo{
+        width: 350px;
+        height: 500px;
+    }
+}
+@media (max-width:825px){
+    .infoServicio h2{
+        font-size: 25px;
+    }
+    .infoServicio p{
+        font-size: 18px;
+    }
+    #servicios2 .columna {
+        width: 90%;
+    }
+    #servicios2 .animate__fadeInRight {
+        width: 50%;
+    }
+    #servicios2 .infoServicio {
+        width: 95%;
+    }
+
+    #servicios3 .imgServicio img{
+        width: 475px;
+        margin-left: -190px;
+    }
+
+    #servicios4 .infoServicio{
+        width: 100%;
+    }
+    #servicios4 .animate__fadeInRight{
+        width: 45%;
+    }
+
+
+    .barra-icon{
+        width: 147px;
+    }
+    
+}
+
+@media (max-width: 808px){
+    .header .topMenu a {
+        font-size: 20px;
+    }
+    .header .topMenu li {
+        padding: 0px 14px;
+    }
+
+    .carousel-caption p {
+        font-size: 1.2rem;
+    }
+
+    #servicios1 .imgServicio img {
+        width: 400px;
+    }
+
+    #servicios3 .infoServicio {
+        margin-right: -130px;
+    }
+    #servicios3 .imgServicio img {
+        width: 441px;
+        margin-left: -163px;
+    }
+    #servicios4 .columna {
+        width: 90%;
+    }
+    #servicios4 .animate__fadeInRight {
+        width: 40%;
+    }
+    #servicios4 .imgServicio img {
+        width: 359px;
+    }
+    .card-back p{
+        font-size: 14px;
+    }
+    .master-container{
+        grid-template-columns: 305px 252px;
+    }
+    .cart .products .product{
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 115px 65px;
+    }
+
+    .cart{
+        width: 305px;
+        
+    }
+    .card .small{
+        margin: 20px 0 auto auto;
+    }
+
+    .coupons, .checkout{
+        width: 252px;
+    }
+
+    .checkout .checkout-btn{
+        width: 100px;
+    }
+
+}
+
+
+/*-----------------------------------------------Responsive pagina principal 768-----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+@media (max-width: 768px){
+    .header .topMenu li{
+        padding: 0px 14px;
+    }
+    .header .topMenu a{
+        font-size: 22px;
+    }
+
+    
+
+    .carousel-caption p{
+        font-size: 1.3rem;
+    }
+
+
+    
+    #cajaIzquierda{
+        width: 36%;
+    }
+    .elementoIzquierda{
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .card-front, .card-back p{
+        font-size: 13px;
+    }
+
+    .infoServicio p{
+        font-size: 18px;
+    }
+
+    #servicios1 .infoServicio{
+        margin-right: -58px;
+        margin-left: 12px;
+        width: -webkit-fill-available;
+    } 
+    #servicios1 .imgServicio img{
+        width: 427px;
+    }
+
+    #servicios2 .animate__fadeInRight{
+        width: 47%;
+    }
+    #servicios2 .imgServicio img{
+        width: 366px;
+    }
+    #servicios2 .infoServicio{
+        width: 95%;
+    }
+
+
+    #servicios3 .imgServicio img{
+        width: 400px;
+        margin-left: -173px;
+    }
+    #servicios3 .infoServicio{
+        margin-right: -171px;
+    }
+
+    #servicios4 .columna{
+        width: 86%;
+    }
+
+    #servicios4 .imgServicio{
+        width: 366px;
+        margin-top: 37px;
+        margin-left: auto;
+    }
+    #servicios4 .infoServicio{
+        width: 93%;
+    }
+
+    .btn-servicios button{
+        font-size: 18px;
+        padding: 8px;
+        width: 116px;
+        margin-top: 5%;
+    }
+
+    
+
+    
+
+    #LogoAces{
+        width: 70px;
+    }
+    #LogoNorma2728{
+        width: 64px;
+    }
+    #LogoCOTCCC{
+        width: 66px;
+    }
+    #LogoAider{
+        width: 73px;
+    }
+    /*-----------------------------------------------Responsive paginas servicios 768-----------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------*/
+    .foto-producto{
+        width: 360px;
+        height: 420px;
+    }
+
+    .descripcionProducto {
+        width: 37%;
+        margin-left: 5%;
+    }
+
+    #descripcionCurso{
+        width: 85%;
+    }
+
+
+
+    /*-----------------------------------------------Responsive paginas servicios 768-----------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------*/
+
+}
+
+/*-----------------------------------------------Responsive paginas servicios 759-----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+@media(max-width: 759px){
+    #cajasT{
+        flex-direction: column;
+    }
+    .equipo{
+        width: 450px;
+        height: 550px;
+    }
+    .card-back p{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 691px){
+    .carousel-caption p {
+        font-size: 1.1rem;
+    }
+    #servicios1 .columna, 
+    #servicios3 .columna{
+        flex-direction: column-reverse;
+    }
+    #servicios2 .columna, 
+    #servicios4 .columna{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    #servicios1, 
+    #servicios2, 
+    #servicios3, 
+    #servicios4{
+        height: auto;
+    }
+    #servicios1 .infoServicio{
+        margin: 60px 0px 0px 0px;
+    }
+    #servicios1 .imgServicio{
+        margin: 47px 0px 0px 70px;
+    }
+
+    #servicios2 .animate__fadeInRight,
+    #servicios4 .animate__fadeInRight{
+        width: 100%;
+    }
+    #servicios2 .infoServicio,
+    #servicios4 .infoServicio{
+        height: auto;
+        width: 100%;
+        margin: 60px 0px 0px 0px;
+    }
+    #servicios2 .imgServicio{
+        margin: 0px 0px 0px -110px;
+    }
+    #servicios2 .imgServicio img{
+        height: 350px;
+        width: 440px;
+        mask-image: linear-gradient(to right, black 95%, transparent), linear-gradient(to left, black 93%, transparent), linear-gradient(to top, black 93%, transparent);
+    }
+    #servicios3 .columna{
+        width: 80%;
+    }
+    #servicios3 .infoServicio{
+        margin-right: 0px;
+    }
+    #servicios3 .imgServicio img{
+        width: 500px;
+        margin: -40px 0px 0px 40px;
+    }
+
+
+
+
+    #producto{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 8% 0 7% 0;
+    }
+    .descripcionProducto{
+        width: 80%;
+        margin: 5% 0%;
+    }
+    .btnComprar{
+        margin-top: 1%;
+    }
+    .foto-producto{
+        width: 500px;
+    }
+
+    .master-container{
+
+        grid-template-columns: 100%;
+        justify-items: center;
+        grid-template-areas:
+        "productos"
+        "productos"
+        "productos"
+        "datosCliente"
+        "valorTotal"
+        ;
+        
+    }
+
+    .cart{
+        width: 90%;
+    }
+
+    .coupons{
+        width: 90%;
+    }
+    .checkout{
+        width: 90%;
+    }
+    
+}
+
+
+
+
+@media (max-width: 650px){
+    
+    #about .columna {
+        width: 75%;
+        flex-direction: column;
+    }
+    #about{
+        height: auto;
+    }
+    #cajaIzquierda {
+        width: 100%;
+    }
+    .elementoIzquierda{
+        border-width: 0px 0px 2px 0px;
+        margin: 0px 0px 20px 0px;
+        text-align: left;
+    }
+    .elementoDerecha{
+        text-align: center;
+    }
+    #cajaDerecha{
+        padding-left: 0px;
+        display: none;
+    }
+
+    .cajaDerechaMovil {
+        display: block;
+    }
+    
+    .elementoDerecha p{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .box-nosotros{
+        flex-direction: column;
+    }
+    #nosotros{
+        height: 650px;
+    }
+    .card-back p{
+        font-size: 17px;
+    }
+    .video-container{
+        height: inherit;
+    }
+    #videoNosotros{
+        height: inherit;
+    }
+}
+@media (max-width: 623px){
+    #servicios1 .imgServicio {
+        margin: 47px 0px 0px 25px;
+    }
+    #servicios2 .imgServicio {
+        margin: 0px 0px 0px -180px;
+    }
+    #servicios3 .imgServicio img {
+        margin: -40px 0px 0px 10px;
+    }
+    
+    
+}
+@media (max-width: 576px){
+    .topMenuMovil{
+        left: 2rem;
+        width: unset;
+    }
+
+    .footer-social ul li{
+        padding: 0% 20px;
+    }
+    .barra-icon{
+        width: 120px;
+    }
+
+    .footer-logo{
+        display: none;
+    }
+    .footer-logo.soloEmermax,
+    .footer-logo.abajoEmermax{
+        display: block;
+    }
+}
+
+@media (max-width: 550px){
+    #servicios1 .imgServicio {
+        margin: 47px 0px 0px 0px;
+        padding-right: 0%;
+    }
+    #servicios3 .imgServicio img {
+        margin: -40px 0px 0px -30px;
+    }
+    
+    #servicios3 .imgServicio img {
+        height: auto;
+        width: 400px;
+        margin: 20px 0px 0px 0px;
+    }
+
+
+    .foto-producto {
+        width: 380px;
+        height: 380px;
+    }
+
+    .master-container{
+        grid-template-columns: 310px ;
+        justify-content: center;
+    }
+    .cart, .coupons, .checkout{
+        width: 310px;
+    }
+}
+@media (max-width: 482px){
+    #servicios1 .imgServicio img{
+        width: 380px;
+    }
+    #servicios2 .imgServicio{
+        margin: 0px 0px 0px -130px;
+    }
+    #servicios2 .imgServicio img{
+        width: 370px;
+    }
+    .equipo {
+        width: 350px;
+        height: 500px;
+    }
+    .elementoDerecha p {
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 440px){
+    .barra-icon{
+        width: 80px;
+    }
+    .card-back p{
+        font-size: 14px;
+    }
+    .carrito{
+        width: 354px;
+    }
+ 
+}
+
+@media (max-width: 425px){
+    #about {
+        padding: 50px 0px 125px 0px;
+    }
+
+    #servicios1 .imgServicio img {
+        width: 320px;
+    }
+    #servicios3 .imgServicio img {
+        width: 350px;
+        margin: 40px 0px 0px 0px;
+    }
+
+    .card-back, .card-front h3 {
+        font-size: 22px;
+
+        #descripcionCurso header {
+            margin-bottom: 20px;
+        }
+        .foto-producto {
+            width: 310px;
+            height: 310px;
+        }
+    }
+
+    .carrito{
+        width: 340px;
+    }
+    .cart-actions button:hover .empty-cart-btn__icon {
+        width: 120px;
+    }
+    .cart-actions button{
+            width: 117px;
+    }
+}
+
+@media (max-width: 380px){
+
+    #about {
+        padding: 50px 0px;
+        
+    }
+    #about .columna{
+        width: 90%;
+    }
+    .box{
+        width: 100%;
+    }
+    #servicios1 .imgServicio img {
+        width: 280px;
+    }
+    #servicios2 .imgServicio {
+        margin: 0px 0px 0px -50px;
+    }
+    #servicios2 .imgServicio img {
+        width: 310px;
+    }
+    #servicios3 .imgServicio img {
+        width: 290px;
+    }
+    #servicios4 .imgServicio {
+        margin-left: 67px;
+    }
+    #servicios4 .imgServicio img {
+        width: 300px;
+    }
+
+    .equipo {
+        width: 300px;
+        height: 450px;
+    }
+    .overlay-text{
+        top: 62%;
+    }
+    .barra-icon {
+        width: 50px;
+    }
+    .master-container{
+        margin-left: 0px;
+    }
+    .card.cart, .card.coupons, .card.checkout{
+        width: 310px ; 
+    }
+    .card{
+        width: 260px;
+    }
+    
+    .card-back p{
+        font-size: 13px;
+    }
+}
+@media(max-width: 350px){
+    .carrito{
+        width: 320px;
+    }
+    .card-button p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px){
+    .equipo {
+        width: 280px;
+        height: 450px;
+    }
+    .foto-producto {
+        width: 260px;
+        height: 300px;
+    }
+
+}

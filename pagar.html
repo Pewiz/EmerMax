@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmerMax - Curso TCCC / TECC</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/png" href="recursos/iconoSolo.webp">
+  <link rel="stylesheet" href="/style/topbar.css">
+  <link rel="stylesheet" href="/style/pagar.css">
+  <link rel="stylesheet" href="/style/footer.css">
+  <link rel="stylesheet" href="/style/mediaQuery.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://kit.fontawesome.com/c46a329c30.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="logo">
+      <a href="index.html"><img src="recursos/IconoBlanco.webp" alt="Logo de la pagina"></a>
+    </div>
+
+  </header>
+  
+
+  <main class="contenidoPagar">
+    <div class="master-container">
+      <div class="card cart">
+        <label class="title">Tu carrito</label>
+        <div class="products"></div>
+      </div>
+      <div class="card coupons">
+        <label class="title">Información personal</label>
+        <form class="form">
+            <input type="text" name="user_name" placeholder="Nombre y Apellido" class="input_field" required>
+            <input type="text" name="user_rut" placeholder="RUT: 12345678-9" class="input_field" required>
+            <input type="tel" name="user_phone" pattern="\+569[0-9]{4}[0-9]{4}"  placeholder="Teléfono: +569XXXXXXXX"  title="Debe ingresar un número de teléfono en el formato +569XXXXXXXX" class="input_field" required>
+            <input type="email" name="user_email" placeholder="Correo" class="input_field" required>
+            <input type="text" name="user_address" placeholder="Dirección: Calle Siempreviva 742" class="input_field" required>
+            <input type="text" name="user_ciudad" placeholder="Ciudad: Puerto Montt" class="input_field" required>
+            <button id="button" type="submit" class="verif-datos-btn">Guardar Datos</button>
+            <samp><em>*Si quieres actualizar los datos recarga la página</em></samp>
+        </form>
+      </div>
+
+      <div class="card checkout"></div>
+    </div>  
+  </main>
+
+
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+
+            <div class="footer-social">
+                <ul>
+                    <li class="barra-icon"></li>
+                    <li><a href="https://web.facebook.com/profile.php?id=61555668171067&locale=es_LA"
+                            target="_blank" rel="noreferrer">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/emermax.training" target="_blank" rel="noreferrer"><i
+                                class="fab fa-instagram fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp fa-lg"></i></a></li>
+                    <li class="barra-icon"></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img id="LogoAces" src="recursos/Aces.webp" alt="LogoAces">
+                <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.webp" alt="logoEnfermerosMilitares">
+                <img src="recursos/iconLetra.webp" alt="LogoEmerMaxLetra">
+                <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.webp" alt="LogoCOTCCC">
+                <img id="LogoAider" src="recursos/Aider.webp" alt="LogoAider">
+            </div>
+            <div class="footer-logo soloEmermax">
+                <img src="recursos/iconLetra.webp" alt="LogoEmerMaxLetra">
+            </div>
+            <div class="footer-logo abajoEmermax">
+                <img id="LogoAces" src="recursos/Aces.webp" alt="LogoAces">
+                <img id="LogoNorma2728" src="recursos/logoEnfermerosMilitares.webp" alt="logoEnfermerosMilitares">
+                <img id="LogoCOTCCC" src="recursos/cotccc-logo-lg.webp" alt="LogoCOTCCC">
+                <img id="LogoAider" src="recursos/Aider.webp" alt="LogoAider">
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2024 EmerMax. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+  <script src="/logic/javascript.js"></script>
+  <script src="/logic/tienda.js"></script>
+  <script src="/logic/pagar.js"></script>
+  <script src="/logic/pagarAhora.js"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">emailjs.init('WEgPbMVtEUB_A7rza')</script>
+</body>
+
+</html>
