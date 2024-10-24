@@ -23,7 +23,7 @@ export function displayFeaturedProducts() {
 
       products.forEach(product => {
         const imageUrl = product.attributes.productoImagen?.data?.attributes?.url
-        ? `${backendUrl}${product.attributes.productoImagen.data.attributes.url}` // Ajusta la URL base si es necesario
+        ? `${product.attributes.productoImagen.data.attributes.url}` // Ajusta la URL base si es necesario
         : `${backendUrl}/default-image.jpg`; // Imagen por defecto si no hay imagen disponible
 
 
@@ -150,7 +150,7 @@ function renderCart() {
         // Recorremos los productos en el carrito y los mostramos
         cart.forEach((product, index) => {
             const imageUrl = product.attributes.productoImagen?.data?.attributes?.url
-            ? `${backendUrl}${product.attributes.productoImagen.data.attributes.url}` // Ajusta la URL base si es necesario
+            ? `${product.attributes.productoImagen.data.attributes.url}` // Ajusta la URL base si es necesario
             : `${backendUrl}/default-image.jpg`; // Imagen por defecto si no hay imagen disponible
 
             const cartItem = document.createElement('div');
