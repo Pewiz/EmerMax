@@ -171,6 +171,7 @@
     font-size: 12px;
     line-height: 15px;
     color: #ffffff;
+    cursor: pointer;
     
   }
 .coupons form button:hover:not(:disabled) {
@@ -335,6 +336,7 @@
 
 .accept:hover {
   background-color: rgb(55 65 81);
+  cursor: pointer;
 }
 
 .accept:focus {

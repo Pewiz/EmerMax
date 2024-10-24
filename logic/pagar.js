@@ -80,10 +80,13 @@ function renderCheckoutCart() {
 
                 // Verificar si los datos personales están vacíos
                 if (datosPersonales.length === 0) {
+                    checkoutButton.disabled = true;
                     pedidoEnviado(1, 3)
                 } else {
                     enviarFormulario(); 
+                    checkoutButton.disabled = true;
                 }
+
             });
 
             if (cart.length === 0) {
@@ -91,6 +94,7 @@ function renderCheckoutCart() {
             } else {
                 checkoutButton.disabled = false;
             }
+            checkoutButton.disabled=false;
         }
         
     } else {
@@ -204,7 +208,7 @@ function pedidoEnviado(total, tipo) {
     // Crear el div del mensaje si no existe
     let mensaje = document.querySelector('.pedidoCompletado');
     let contenedor= document.querySelector('.containerPedidoCompletado');
-    if (!contenedor) {
+    if (!mensaje) {
         contenedor = document.createElement('div');
         contenedor.classList.add('containerPedidoCompletado')
         document.body.appendChild(contenedor);
@@ -217,7 +221,7 @@ function pedidoEnviado(total, tipo) {
     if(tipo == 1){
             mensaje.innerHTML = `
             <span class="title">🎉 Pedido Solicitado</span>
-            <p class="description">Ha realizado un pedido de <strong> $${total.toFixed(0)}</strong>. Le va a llegar un <strong>correo con la informacion del pedido</strong> y pronto nos pondremos en contacto con usted</p>
+            <p class="description">Ha realizado un pedido de <strong> $${total}</strong>. Le va a llegar un <strong>correo con la informacion del pedido</strong> y pronto nos pondremos en contacto con usted</p>
             <div class="actions">
                 <button id="accept" class="accept"> Aceptar </button>
             </div>
@@ -256,10 +260,11 @@ function pedidoEnviado(total, tipo) {
     contenedor.style.display = 'block';
     mensaje.style.display = 'block';
 
-
+    const checkoutButton = document.getElementById('checkout-btn');
     document.getElementById('accept').addEventListener('click', function(event) {
         mensaje.style.display = 'none';
         contenedor.style.display = 'none';
+        checkoutButton.disabled=false;
     });
 
 }
