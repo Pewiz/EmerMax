@@ -137,8 +137,8 @@ function enviarFormulario() {
     const btn = document.getElementById('checkout-btn');
     btn.value = 'Sending...';
 
-    const serviceID = 'default_service';
-    const templateID = 'template_u6hp5ur';
+    const serviceID = 'service_5yi1qhp';
+    const templateID = 'template_wb268mq';
     console.log(templateParams);
 
     // Enviamos los datos con emailjs

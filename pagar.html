@@ -101,9 +101,14 @@
   <script src="/logic/javascript.js"></script>
   <script type="module" src="/logic/tienda.js"></script>
   <script type="module" src="/logic/pagar.js"></script>
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">emailjs.init('WEgPbMVtEUB_A7rza')</script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "le25BSggSVEho35DT",
+      });
+   })();
+  </script>
 </body>
 
 </html>
