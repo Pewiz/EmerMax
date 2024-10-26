@@ -58,7 +58,7 @@ export function displayFeaturedProducts() {
         const productPrice = document.createElement('span');
         productPrice.classList.add('text-title');
         if(product.attributes.productoPrecio == 0 ){
-            productPrice.innerHTML = card
+            productPrice.innerHTML = `  `
         }else{
             productPrice.innerHTML = `$${product.attributes.productoPrecio}`
         }
